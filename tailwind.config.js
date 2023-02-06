@@ -14,7 +14,7 @@ module.exports = {
     colors: {
       transparent: "transparent",
       white: "#ffffff",
-      darkBlue: "#11131F",
+      black: "#11131F",
       mediumGray: "#d9d9d9",
       lightGray: "#f9f9f9",
     },
@@ -36,13 +36,13 @@ module.exports = {
       4: "1rem",
       5: "1.25rem",
       6: "1.5rem",
-      7: "1.75rem",
+      7: "1.875rem", //30px
       8: "2rem",
       9: "2.25rem",
       10: "2.5rem",
       11: "2.75rem",
       12: "3rem",
-      14: "3.5rem",
+      14: "3.75rem", //padding 60px
       16: "4rem",
       20: "5rem",
       24: "6rem",

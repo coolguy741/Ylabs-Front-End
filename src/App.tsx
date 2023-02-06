@@ -1,13 +1,13 @@
 import React from 'react';
 import { Routes, Route, Outlet} from 'react-router-dom';
 import Home from './pages/Home';
-import Navbar from './components/Navbar';
 import Work from './pages/Work';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Arufo from './pages/Arufo';
 import Rapid from './pages/Rapid';
 import Planify from './pages/Planify';
+import Header from './components/Header';
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
 function Layout(){
   return (
     <>
-      <Navbar/>
+      <Header />
       <div>
         <Outlet />
       </div>
