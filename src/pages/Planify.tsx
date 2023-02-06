@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Home() {
+function Planify() {
     return (
         <div>
-            Home
+            Planify
         </div>
     )
 }
 
-export default Home;
+export default Planify;
