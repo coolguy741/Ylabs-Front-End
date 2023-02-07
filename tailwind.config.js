@@ -22,7 +22,6 @@ module.exports = {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
     },
-
     spacing: {
       px: "1px",
       0: "0",
@@ -59,6 +58,22 @@ module.exports = {
       72: "18rem",
       80: "20rem",
       96: "24rem",
+    },
+    fontSize: {
+      "": [
+        "24px",
+        {
+          letterSpacing: "-0.01em",
+        },
+      ],
+      // Or with a default line-height as well
+      "3xl": [
+        "32px",
+        {
+          letterSpacing: "-0.02em",
+          lineHeight: "40px",
+        },
+      ],
     },
     borderRadius: {
       none: "0",

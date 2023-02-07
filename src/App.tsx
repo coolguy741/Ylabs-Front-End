@@ -7,7 +7,7 @@ import Contact from './pages/Contact';
 import Arufo from './pages/Arufo';
 import Rapid from './pages/Rapid';
 import Planify from './pages/Planify';
-import Header from './components/Header';
+import {Header} from './components/organisms/Header';
 
 function App() {
   return (
