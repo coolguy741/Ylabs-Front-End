@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 function Header() {
     return (
-        <div className="p-10">
+        <div className="pt-7 px-14">
             <Navbar />
         </div>
     )
