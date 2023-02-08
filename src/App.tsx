@@ -45,7 +45,7 @@ function Layout(){
     <ThemeContext.Consumer>
        {({theme, setTheme}) => (
         <>
-          <div className='bg-white dark:bg-black'>
+          <div className='bg-white text-black dark:bg-black dark:text-white min-h-screen'>
             <div>
               {Object.entries(lngs).map((entry) => (
                 <button key={entry[0]} style={{ fontWeight: i18n.resolvedLanguage === entry[0] ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(entry[0])}>
