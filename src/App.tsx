@@ -9,10 +9,17 @@ import Rapid from './pages/Rapid';
 import Planify from './pages/Planify';
 import {Header} from './components/organisms/Header';
 import { ThemeContext, ThemeContextProps } from './context/ThemeProvider';
+import { useTranslation, Trans } from 'react-i18next';
+
+const lngs = {
+  en: { nativeName: 'English' },
+  de: { nativeName: 'Deutsch' }
+};
 
 function App() {
   const [Theme, setTheme] = useState('light');
   const value:ThemeContextProps={theme:Theme, setTheme};
+
 
   return (
     <ThemeContext.Provider value={value}>
@@ -32,13 +39,28 @@ function App() {
 }
 
 function Layout(){
+  const {t, i18n} = useTranslation();
+  
   return (
     <ThemeContext.Consumer>
        {({theme, setTheme}) => (
         <>
-          <Header />
-          <div>
-            <Outlet />
+          <div className='bg-white dark:bg-black'>
+            <div>
+              {Object.entries(lngs).map((entry) => (
+                <button key={entry[0]} style={{ fontWeight: i18n.resolvedLanguage === entry[0] ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(entry[0])}>
+                  {entry[1].nativeName}
+                </button>
+              ))}
+            </div>
+            <Header />
+            <div>
+              <Outlet />
+            </div>
+            <div>{t('description.part2')}</div>
+            <Trans i18nKey="description.part1">
+              Edit <code>src/App.js</code> and save to reload.
+            </Trans>
           </div>
         </>
       )}

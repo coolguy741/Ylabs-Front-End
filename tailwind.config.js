@@ -75,11 +75,13 @@ module.exports = {
       lg: ".5rem",
       full: "9999px",
     },
+    colors: {
+      transparent: "transparent",
+      white: "#ffffff",
+      black: "#11131F",
+    },
     extand: {
       colors: {
-        transparent: "transparent",
-        white: "#ffffff",
-        black: "#11131F",
         mediumGray: "#d9d9d9",
         lightGray: "#f9f9f9",
       },
