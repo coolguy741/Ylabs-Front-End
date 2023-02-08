@@ -11,13 +11,6 @@ module.exports = {
       lg: "1280px",
       xl: "1920px",
     },
-    colors: {
-      transparent: "transparent",
-      white: "#ffffff",
-      black: "#11131F",
-      mediumGray: "#d9d9d9",
-      lightGray: "#f9f9f9",
-    },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
@@ -82,7 +75,15 @@ module.exports = {
       lg: ".5rem",
       full: "9999px",
     },
-    extand: {},
+    extand: {
+      colors: {
+        transparent: "transparent",
+        white: "#ffffff",
+        black: "#11131F",
+        mediumGray: "#d9d9d9",
+        lightGray: "#f9f9f9",
+      },
+    },
   },
   plugins: [],
 };

@@ -1,17 +1,25 @@
 import { useEffect, useState } from 'react';
+import { useTheme } from '../../../context/ThemeProvider';
 
 const ThemeToggle = () => {
 	const [mounted, setMounted] = useState(false);
-	const [theme, setTheme] = useState('light');
+	const {theme, setTheme} = useTheme();
 
 	useEffect(() => setMounted(true), []);
+
+	function switchTheme() {
+		console.log("YL: toggle Theme")
+		var element = document.body;
+		element.classList.toggle("dark");
+		setTheme(theme === 'dark' ? 'light' : 'dark');
+	}
 
 	return (
 		<button
 			aria-label="Toggle Dark Mode"
 			type="button"
-			className="p-2 bg-transparent border-2 border-grey-300 dark:border-grey-700 rounded-full dark:bg-transparent flex items-center justify-center hover:ring-2 hover:ring-offset-2 ring-grey-300 dark:hover:ring-2 dark:hover:ring-offset-2 dark:ring-grey-200 transition-all"
-			onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+			className="p-2 bg-transparent border-2 border-gray-300 dark:border-gray-700 rounded-full dark:bg-transparent flex items-center justify-center hover:ring-2 hover:ring-offset-2 ring-gray-300 dark:hover:ring-2 dark:hover:ring-offset-2 dark:ring-gray-200 transition-all"
+			onClick={() => switchTheme()}
 		>
 			{mounted && (
 				<>
@@ -20,7 +28,7 @@ const ThemeToggle = () => {
 						viewBox="0 0 24 24"
 						fill="none"
 						stroke="currentColor"
-						className="w-5 h-5 text-grey-800 dark:text-grey-200"
+						className="w-5 h-5 text-gray-800 dark:text-gray-200"
 					>
 						{theme === 'dark' ? (
 							<path
