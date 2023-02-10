@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Routes, Route, Outlet} from 'react-router-dom';
-import Home from './pages/Home';
+import {Home} from './pages/Home';
 import Work from './pages/Work';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -46,13 +46,6 @@ function Layout(){
        {({theme, setTheme}) => (
         <>
           <div className='bg-white text-black dark:bg-black dark:text-white min-h-screen'>
-            <div>
-              {Object.entries(lngs).map((entry) => (
-                <button key={entry[0]} style={{ fontWeight: i18n.resolvedLanguage === entry[0] ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(entry[0])}>
-                  {entry[1].nativeName}
-                </button>
-              ))}
-            </div>
             <Header />
             <div>
               <Outlet />

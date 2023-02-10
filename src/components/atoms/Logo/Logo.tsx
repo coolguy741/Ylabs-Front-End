@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Logo = () => {
 	return (
 		<Link to="/">
-			<img className="w-14 text-black dark:invert" src={LogoIcon} alt="logo"/>
+			<img className="w-14 dark:invert" src={LogoIcon} alt="logo"/>
 		</Link>
 	);
 };

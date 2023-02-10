@@ -8,6 +8,7 @@ import { MobileMenu } from '../../molecules/MobileMenu';
 import { NavigationItem } from '../../atoms/NavigationItem';
 import { ThemeToggle } from '../../atoms/ThemeToggle';
 import { useLocation } from 'react-router-dom';
+import LanguageToggle from '../../atoms/LanguageToggle/LanguageToggle';
 
 export const navItems = [
 	{
@@ -80,7 +81,8 @@ const Header = () => {
 					>
 						<BurgerIcon isOpen={isOpen} />
 					</button>
-					<div className="hidden md:block">
+					<div className="flex hidden md:flex">
+						<LanguageToggle />
 						<ThemeToggle />
 					</div>
 				</div>
