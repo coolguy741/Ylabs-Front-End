@@ -1,6 +1,6 @@
-import React from "react";
+import { useTheme } from "../../../context/ThemeProvider"
+import styles from "./LanguageToggle.module.css";
 import "./LanguageToggle.css";
-import { useTheme } from "../../../context/ThemeProvider";
 import { useTranslation } from 'react-i18next';
 
 const LanguageToggle = () => {
@@ -17,10 +17,10 @@ const LanguageToggle = () => {
 	}
 
 	return (
-		<div className={theme === 'light' ? "container white-preview" : "container dark-preview"}>
+		<div className={theme === 'light' ? "container white" : "container dark"}>
 			<label className="switch btn-color-mode-switch">
-				<input type="checkbox" checked={i18n.language === "de"} name="color_mode" id="color_mode" value="1" onClick={() => toggleLanguage()}/>
-				<label htmlFor="color_mode" data-on="DE" data-off="EN"
+				<input type="checkbox" checked={i18n.language === "de"} name="color_mode1" id="color_mode1" value="1" onClick={() => toggleLanguage()}/>
+				<label htmlFor="color_mode1" data-on="DE" data-off="EN"
 					className="btn-color-mode-switch-inner"></label>
 			</label>
 		</div>

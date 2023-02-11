@@ -18,14 +18,15 @@
 }
 
 .btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
-  content: attr(data-on);
+  content: "";
   position: absolute;
+  background: url(./dark.svg) no-repeat;
   top: 5px;
   right: 13px;
 }
 
 .btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
-  content: attr(data-off);
+  content: url(./dark.svg);
   width: 46px;
   height: 24px;
   border-radius: 18px;
@@ -48,13 +49,16 @@
   margin: 0px;
 }
 
+.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner{
+}
+
 .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:before{
-  content: attr(data-off);
+  content: url(./dark.svg);
   left: 13px;
 }
 
 .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after{
-  content: attr(data-on);
+  content: url(./dark.svg);
   left: 50px;
 }
 
@@ -68,46 +72,48 @@
   font-weight: 400;
 }
 
-.white .btn-color-mode-switch > label.btn-color-mode-switch-inner{
+
+/* Theme */
+.white-preview .btn-color-mode-switch > label.btn-color-mode-switch-inner{
   border-color: #11131F;
 }
 
-.white .btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
+.white-preview .btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
   color:#11131F;
 }
 
-.white .btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
+.white-preview .btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
   background-color: #11131F;
   color:#ffffff;
 }
 
-.white .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner{
+.white-preview .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner{
   color: #fff;
 }
 
-.white .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after{
+.white-preview .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after{
   background: #11131F;
 }
 
 
 
-.dark .btn-color-mode-switch > label.btn-color-mode-switch-inner{
+.dark-preview .btn-color-mode-switch > label.btn-color-mode-switch-inner{
   border-color: #ffffff;
 }
 
-.dark .btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
+.dark-preview .btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
   color:#ffffff;
 }
 
-.dark .btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
+.dark-preview .btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
   background-color: #ffffff;
   color:#11131F;
 }
 
-.dark .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner{
+.dark-preview .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner{
   color: #11131F;
 }
 
-.dark .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after{
+.dark-preview .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after{
   background: #ffffff;
 }

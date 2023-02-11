@@ -83,7 +83,7 @@ const Header = () => {
 					</button>
 					<div className="flex hidden md:flex">
 						<LanguageToggle />
-						<ThemeToggle />
+						{/* <ThemeToggle /> */}
 					</div>
 				</div>
 			</header>
