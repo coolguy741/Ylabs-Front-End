@@ -11,18 +11,10 @@ module.exports = {
       lg: "1280px",
       xl: "1920px",
     },
-    colors: {
-      transparent: "transparent",
-      white: "#ffffff",
-      darkBlue: "#11131F",
-      mediumGray: "#d9d9d9",
-      lightGray: "#f9f9f9",
-    },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
     },
-
     spacing: {
       px: "1px",
       0: "0",
@@ -36,13 +28,13 @@ module.exports = {
       4: "1rem",
       5: "1.25rem",
       6: "1.5rem",
-      7: "1.75rem",
+      7: "1.875rem", //30px
       8: "2rem",
       9: "2.25rem",
       10: "2.5rem",
       11: "2.75rem",
       12: "3rem",
-      14: "3.5rem",
+      14: "3.75rem", //padding 60px
       16: "4rem",
       20: "5rem",
       24: "6rem",
@@ -60,6 +52,34 @@ module.exports = {
       80: "20rem",
       96: "24rem",
     },
+    fontSize: {
+      xl: [
+        "20px",
+        {
+          letterSpacing: "-0.01em",
+          fontWeight: "400",
+        },
+      ],
+      // Or with a default line-height as well
+      "3xl": [
+        "32px",
+        {
+          letterSpacing: "-0.02em",
+          lineHeight: "32px",
+        },
+      ],
+    },
+    fontWeight: {
+      hairline: 100,
+      thin: 200,
+      light: 300,
+      normal: 400,
+      medium: 500,
+      semibold: 600,
+      bold: 700,
+      extrabold: 800,
+      black: 900,
+    },
     borderRadius: {
       none: "0",
       sm: ".125rem",
@@ -67,7 +87,17 @@ module.exports = {
       lg: ".5rem",
       full: "9999px",
     },
-    extand: {},
+    colors: {
+      transparent: "transparent",
+      white: "#ffffff",
+      black: "#11131F",
+    },
+    extand: {
+      colors: {
+        mediumGray: "#d9d9d9",
+        lightGray: "#f9f9f9",
+      },
+    },
   },
   plugins: [],
 };
