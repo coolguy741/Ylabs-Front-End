@@ -18,10 +18,10 @@ const LanguageToggle = () => {
 
 	return (
 		<div className={theme === 'light' ? "container white" : "container dark"}>
-			<label className="switch btn-color-mode-switch">
+			<label className="btn-color-mode-switch-language">
 				<input type="checkbox" checked={i18n.language === "de"} name="color_mode1" id="color_mode1" value="1" onClick={() => toggleLanguage()}/>
 				<label htmlFor="color_mode1" data-on="DE" data-off="EN"
-					className="btn-color-mode-switch-inner"></label>
+					className="btn-color-mode-switch-language-inner"></label>
 			</label>
 		</div>
 	);

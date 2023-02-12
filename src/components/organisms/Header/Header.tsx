@@ -83,9 +83,9 @@ const Header = () => {
 					</button>
 					<div className="flex hidden md:flex">
 						<LanguageToggle />
-						{/* <ThemeToggle /> */}
+						<ThemeToggle />
 					</div>
-				</div>
+				</div>	
 			</header>
 			<MobileMenu isOpen={isOpen} />
 		</Headroom>

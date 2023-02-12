@@ -1,10 +1,10 @@
 
-.btn-color-mode-switch{
+.btn-color-mode-switch-language{
   display: inline-block;
   position: relative;
 }
 
-.btn-color-mode-switch > label.btn-color-mode-switch-inner{
+label.btn-color-mode-switch-language-inner{
   width: 101px;
   height: 32px;
   border-style: solid;
@@ -17,14 +17,14 @@
  
 }
 
-.btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
+label.btn-color-mode-switch-language-inner:before{
   content: attr(data-on);
   position: absolute;
   top: 5px;
   right: 13px;
 }
 
-.btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
+label.btn-color-mode-switch-language-inner:after{
   content: attr(data-off);
   width: 46px;
   height: 24px;
@@ -35,9 +35,10 @@
   text-align: center;
   transition: all 0.3s ease;
   vertical-align: middle;
+  padding-top: 2px;
 }
 
-.btn-color-mode-switch input[type="checkbox"]{
+input[type="checkbox"]{
   cursor: pointer;
   width: 50px;
   height: 25px;
@@ -48,12 +49,12 @@
   margin: 0px;
 }
 
-.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:before{
+input[type="checkbox"]:checked + label.btn-color-mode-switch-language-inner:before{
   content: attr(data-off);
   left: 13px;
 }
 
-.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after{
+input[type="checkbox"]:checked + label.btn-color-mode-switch-language-inner:after{
   content: attr(data-on);
   left: 50px;
 }
@@ -68,46 +69,46 @@
   font-weight: 400;
 }
 
-.white .btn-color-mode-switch > label.btn-color-mode-switch-inner{
+.white label.btn-color-mode-switch-language-inner{
   border-color: #11131F;
 }
 
-.white .btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
+.white label.btn-color-mode-switch-language-inner:before{
   color:#11131F;
 }
 
-.white .btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
+.white label.btn-color-mode-switch-language-inner:after{
   background-color: #11131F;
   color:#ffffff;
 }
 
-.white .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner{
+.white input[type="checkbox"]:checked + label.btn-color-mode-switch-language-inner{
   color: #fff;
 }
 
-.white .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after{
+.white input[type="checkbox"]:checked + label.btn-color-mode-switch-language-inner:after{
   background: #11131F;
 }
 
 
 
-.dark .btn-color-mode-switch > label.btn-color-mode-switch-inner{
+.dark label.btn-color-mode-switch-language-inner{
   border-color: #ffffff;
 }
 
-.dark .btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
+.dark label.btn-color-mode-switch-language-inner:before{
   color:#ffffff;
 }
 
-.dark .btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
+.dark label.btn-color-mode-switch-language-inner:after{
   background-color: #ffffff;
   color:#11131F;
 }
 
-.dark .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner{
+.darkinput[type="checkbox"]:checked + label.btn-color-mode-switch-language-inner{
   color: #11131F;
 }
 
-.dark .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after{
+.darkinput[type="checkbox"]:checked + label.btn-color-mode-switch-language-inner:after{
   background: #ffffff;
 }

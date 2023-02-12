@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { NavigationItem } from '../../atoms/NavigationItem';
 import { navItems } from '../../organisms/Header';
 import { ThemeToggle } from '../../atoms/ThemeToggle';
+import LanguageToggle from '../../atoms/LanguageToggle/LanguageToggle';
 
 export interface MobileMenuProps {
 	isOpen: boolean;
@@ -34,7 +35,7 @@ const MobileMenu = ({ isOpen }: MobileMenuProps) => {
 							clickOutsideDeactivates: true,
 						}}
 					>
-						<ul className="flex flex-col justify-center align-center text-center gap-4 h-full">
+						<ul className="flex flex-col justify-center align-center text-center gap-4 h-full z-50">
 							{navItems.map(({ href, title }, i) => (
 								<NavigationItem
 									href={href}
@@ -47,12 +48,13 @@ const MobileMenu = ({ isOpen }: MobileMenuProps) => {
 								/>
 							))}
 							<motion.li
-								className="flex justify-center mt-12"
+								className="flex justify-center mt-12 z-50"
 								variants={navigationVariants}
 								initial="hidden"
 								animate="visible"
 								custom={0.5 + (navItems.length + 1) * 0.1}
 							>
+								<LanguageToggle />
 								<ThemeToggle />
 							</motion.li>
 						</ul>
