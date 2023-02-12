@@ -53,10 +53,11 @@ module.exports = {
       96: "24rem",
     },
     fontSize: {
-      "": [
-        "24px",
+      xl: [
+        "20px",
         {
           letterSpacing: "-0.01em",
+          fontWeight: "400",
         },
       ],
       // Or with a default line-height as well
@@ -64,9 +65,20 @@ module.exports = {
         "32px",
         {
           letterSpacing: "-0.02em",
-          lineHeight: "40px",
+          lineHeight: "32px",
         },
       ],
+    },
+    fontWeight: {
+      hairline: 100,
+      thin: 200,
+      light: 300,
+      normal: 400,
+      medium: 500,
+      semibold: 600,
+      bold: 700,
+      extrabold: 800,
+      black: 900,
     },
     borderRadius: {
       none: "0",

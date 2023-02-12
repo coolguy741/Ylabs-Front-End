@@ -57,10 +57,12 @@ const Header = () => {
 	return (
 		<Headroom>
 			<header className="relative z-50 px-4 lg:px-20 py-8 backdrop-blur-md">
-				<div className="flex justify-between items-center">
-					<Logo />
-					<nav className="hidden md:block">
-						<ul className="flex gap-8 text-lg">
+				<div className="flex items-center text-3xl md:text-xl leading-5 text-black dark:text-white">
+					<div className="flex-grow">
+						<Logo />
+					</div>
+					<nav className="hidden md:block min-w-[258px] mr-20">
+						<ul className="flex gap-5 justify-between">
 							{navItems.map(({ href, title }, i) => (
 								<NavigationItem
 									href={href}
@@ -81,9 +83,16 @@ const Header = () => {
 					>
 						<BurgerIcon isOpen={isOpen} />
 					</button>
-					<div className="flex hidden md:flex">
-						<LanguageToggle />
-						<ThemeToggle />
+					<div className="flex justify-between min-w-[230px] mr-44 hidden md:flex">
+						<div>
+							<LanguageToggle/>
+						</div>
+						<div>
+							<ThemeToggle />
+						</div>
+					</div>
+					<div className="flex hidden md:block">
+						Ylabs 	&copy;2023
 					</div>
 				</div>	
 			</header>
