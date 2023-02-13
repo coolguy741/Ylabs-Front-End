@@ -1,9 +1,12 @@
 import React from 'react';
+import { ApproachSection } from './Sections/ApproachSection';
+import { HeroSection } from './Sections/HeroSection';
 
 function Home() {
     return (
         <div>
-            Home
+            <HeroSection/>
+            <ApproachSection/>
         </div>
     )
 }

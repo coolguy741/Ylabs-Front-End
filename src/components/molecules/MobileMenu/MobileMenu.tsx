@@ -48,7 +48,7 @@ const MobileMenu = ({ isOpen }: MobileMenuProps) => {
 								/>
 							))}
 							<motion.li
-								className="flex justify-center mt-12 z-50"
+								className="flex mt-12 z-50 min-w-[350px] justify-between mx-auto"
 								variants={navigationVariants}
 								initial="hidden"
 								animate="visible"
