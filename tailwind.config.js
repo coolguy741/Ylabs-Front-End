@@ -7,7 +7,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     screens: {
-      sm: "480px",
+      sm: "720px",
       md: "960px",
       lg: "1280px",
       xl: "1920px",
@@ -58,12 +58,36 @@ module.exports = {
           lineHeight: "28px",
         },
       ],
+      "1xl": [
+        "20px",
+        {
+          letterSpacing: "-0.01em",
+          fontWeight: "500",
+          lineHeight: "28px",
+        },
+      ],
+      "2xl": [
+        "24px",
+        {
+          letterSpacing: "-0.01em",
+          fontWeight: "500",
+          lineHeight: "28px",
+        },
+      ],
       "3xl": [
         "30px",
         {
           fontWeight: "500",
           letterSpacing: "-0.01em",
           lineHeight: "35px",
+        },
+      ],
+      "4xl": [
+        "40px",
+        {
+          fontWeight: "500",
+          letterSpacing: "-0.01em",
+          lineHeight: "43px",
         },
       ],
       "6xl": [
