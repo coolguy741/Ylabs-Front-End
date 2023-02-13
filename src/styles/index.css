@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+	html {
+    font-family: pp-neue-montreal;
+  }
+}
+
 @layer components{
     .burger-icon {
 		width: 32px;

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -10,10 +11,6 @@ module.exports = {
       md: "960px",
       lg: "1280px",
       xl: "1920px",
-    },
-    fontFamily: {
-      sans: ["Graphik", "sans-serif"],
-      serif: ["Merriweather", "serif"],
     },
     spacing: {
       px: "1px",
@@ -58,14 +55,31 @@ module.exports = {
         {
           letterSpacing: "-0.01em",
           fontWeight: "400",
+          lineHeight: "28px",
         },
       ],
-      // Or with a default line-height as well
       "3xl": [
-        "32px",
+        "30px",
         {
-          letterSpacing: "-0.02em",
-          lineHeight: "32px",
+          fontWeight: "500",
+          letterSpacing: "-0.01em",
+          lineHeight: "35px",
+        },
+      ],
+      "6xl": [
+        "60px",
+        {
+          fontWeight: "500",
+          letterSpacing: "-0.01em",
+          lineHeight: "62px",
+        },
+      ],
+      "9xl": [
+        "90px",
+        {
+          fontWeight: "500",
+          letterSpacing: "-0.01em",
+          lineHeight: "85px",
         },
       ],
     },
@@ -93,6 +107,9 @@ module.exports = {
       black: "#11131F",
     },
     extand: {
+      fontFamily: {
+        "pp-neue-montreal": ['"PP Neue Montreal"'],
+      },
       colors: {
         mediumGray: "#d9d9d9",
         lightGray: "#f9f9f9",

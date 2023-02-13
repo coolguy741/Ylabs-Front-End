@@ -45,9 +45,9 @@ function Layout(){
     <ThemeContext.Consumer>
        {({theme, setTheme}) => (
         <>
-          <div className='bg-white text-black dark:bg-black dark:text-white min-h-screen'>
+          <div className='bg-white text-black dark:bg-black dark:text-white min-h-screen text-pp-neue-montreal'>
             <Header />
-            <div>
+            <div className='px-4 lg:px-14 pb-14 mt-9'>
               <Outlet />
             </div>
             <div>{t('description.part2')}</div>
