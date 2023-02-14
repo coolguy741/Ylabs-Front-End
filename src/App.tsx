@@ -10,6 +10,7 @@ import Planify from './pages/Planify';
 import {Header} from './components/organisms/Header';
 import { ThemeContext, ThemeContextProps } from './context/ThemeProvider';
 import { useTranslation, Trans } from 'react-i18next';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const lngs = {
   en: { nativeName: 'English' },
@@ -23,17 +24,19 @@ function App() {
 
   return (
     <ThemeContext.Provider value={value}>
-      <Routes>
-        <Route path='/' element = {<Layout />}>
-          <Route index element = {<Home/>} />
-          <Route path='/work' element = {<Work/>} />
-          <Route path='/about' element = {<About/>} />
-          <Route path='/contact' element = {<Contact/>} />
-          <Route path='/arufo' element = {<Arufo/>} />
-          <Route path='/rapid' element = {<Rapid/>} />
-          <Route path='/planify' element = {<Planify/>} />
-        </Route>
-      </Routes>
+      <ParallaxProvider>
+        <Routes>
+            <Route path='/' element = {<Layout />}>
+              <Route index element = {<Home/>} />
+              <Route path='/work' element = {<Work/>} />
+              <Route path='/about' element = {<About/>} />
+              <Route path='/contact' element = {<Contact/>} />
+              <Route path='/arufo' element = {<Arufo/>} />
+              <Route path='/rapid' element = {<Rapid/>} />
+              <Route path='/planify' element = {<Planify/>} />
+            </Route>
+        </Routes>
+      </ParallaxProvider>
     </ThemeContext.Provider>
   );
 }
@@ -47,13 +50,13 @@ function Layout(){
         <>
           <div className='bg-white text-black dark:bg-black dark:text-white min-h-screen text-pp-neue-montreal'>
             <Header />
-            <div className='px-4 lg:px-14 pb-14 mt-9'>
+            <div className='px-7 lg:px-14 pb-14 mt-9'>
               <Outlet />
             </div>
-            <div>{t('description.part2')}</div>
+            {/* <div>{t('description.part2')}</div>
             <Trans i18nKey="description.part1">
               Edit <code>src/App.js</code> and save to reload.
-            </Trans>
+            </Trans> */}
           </div>
         </>
       )}

@@ -1,25 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Typewriter} from 'react-simple-typewriter';
 
 interface Props {
-  visible: boolean;
-  children: React.ReactNode
+  initialState: number;
 }
 
-const HeroTitle: React.FC<Props> = ({visible, children}) => {
+const HeroTitle: React.FC<Props> = ({initialState}) => {
 
   return (
       <AnimatePresence>
-        { visible && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            {children}
-          </motion.div>
-        )}
+          <Typewriter
+            words={['Transforming startup ideas into market-ready entities']}
+            loop={1}
+            cursor
+            cursorStyle='|'
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+          <p>
+            Dare to :{' '}
+            <span className='font-bold uppercase'>
+              
+            </span>
+          </p>
       </AnimatePresence>
   );
 };
