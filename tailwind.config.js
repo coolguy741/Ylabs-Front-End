@@ -125,13 +125,14 @@ module.exports = {
       lg: ".5rem",
       full: "9999px",
     },
-    extand: {
+    extend: {
       colors: {
         transparent: "transparent",
         white: "#ffffff",
         black: "#11131F",
         mediumGray: "#d9d9d9",
         lightGray: "#f9f9f9",
+        red: "#FF0000",
       },
       fontFamily: {
         "pp-neue-montreal": ['"PP Neue Montreal"'],

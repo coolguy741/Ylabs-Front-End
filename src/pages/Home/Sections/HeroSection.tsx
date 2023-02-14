@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import  LogoImage from '../../../assets/images/TEST1.png';
+import  LogoImage from '../../../assets/images/logo.png';
 import OrganizationImage from '../../../assets/images/61.png';
 import { HeroTitle } from '../../../components/molecules/HeroTitle';
 
@@ -12,9 +12,9 @@ const HeroSection = () => {
     return (
         <div>
             <div className='relative flex justify-center'>
-                <img className='md:absolute md:top-0 md:right-0' src={LogoImage} />
+                <img className='md:absolute top-0 right-0' src={LogoImage} />
             </div>
-            <div className='text-6xl max-w-[600px] md:text-9xl md:max-w-[920px] pt-[140px]'>
+            <div className='relative text-6xl lg:text-9xl max-w-[600px]  md:max-w-[920px] pt-[140px]'>
             {
                 state === 1 ? (
                     <HeroTitle initialState={1} />

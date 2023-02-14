@@ -1,5 +1,4 @@
 import { useTheme } from "../../../context/ThemeProvider"
-import styles from "./LanguageToggle.module.css";
 import "./LanguageToggle.css";
 import { useTranslation } from 'react-i18next';
 
