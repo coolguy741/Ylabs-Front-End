@@ -1,8 +1,7 @@
-import React from 'react';
 import { ApproachSection } from './Sections/ApproachSection';
 import { HeroSection } from './Sections/HeroSection';
 
-function Home() {
+const Home = () => {
     return (
         <div>
             <HeroSection/>

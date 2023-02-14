@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Work() {
+const About = () => {
     return (
         <div>
-            Work
+            About
         </div>
     )
 }
 
-export default Work;
+export {About};

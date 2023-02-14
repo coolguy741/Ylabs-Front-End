@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Rapid() {
+const Contact = () => {
     return (
         <div>
-            Rapid
+            Contact
         </div>
     )
 }
 
-export default Rapid;
+export {Contact};

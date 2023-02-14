@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Planify() {
+const Planify = () => {
     return (
         <div>
             Planify
@@ -8,4 +8,4 @@ function Planify() {
     )
 }
 
-export default Planify;
+export {Planify};

@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Arufo() {
+const Rapid = () => {
     return (
         <div>
-            Arufo
+            Rapid
         </div>
     )
 }
 
-export default Arufo;
+export {Rapid};
