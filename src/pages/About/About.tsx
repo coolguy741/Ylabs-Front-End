@@ -2,6 +2,41 @@ import React from 'react';
 import  AboutImage from '../../assets/images/about.png';
 import  PlusImage from '../../assets/icons/plus.png';
 import MemberList from '../../components/molecules/MemberList/MemberList';
+import type { TMember } from '../../components/atoms/Member';
+
+const memebers: TMember[]= [
+    {
+        image: "/images/member1.png",
+        name:   "Yaron Finger",
+        description: "A bit about Yaron and what he does.  Not a lot, though; 2–4 lines work best.  Yaron likes to eat well."
+    }, 
+    {
+        image: "/images/member2.png",
+        name:   "Not Yaron Fanger",
+        description: "A bit about Not Yaron and what he does.  Not a lot, though; 2–4 lines work best.  Not Yaron likes to eat well."
+    }, 
+    {
+        image: "/images/member2.png",
+        name:   "Also Not Yaron Finger",
+        description: "A bit about Not Yaron and what he does.  Not a lot, though; 2–4 lines work best.  Not Yaron likes to eat well."
+    }, 
+    {
+        image: "/images/member2.png",
+        name:   "Still Not Mr Fanger",
+        description: "A bit about Not Yaron and what he does.  Not a lot, though; 2–4 lines work best.  Not Yaron likes to eat well."
+    }, 
+    {
+        image: "/images/member2.png",
+        name:   "Sure Isn’t Him",
+        description: "A bit about Not Yaron and what he does.  Not a lot, though; 2–4 lines work best.  Not Yaron likes to eat well."
+    },
+    {
+        image: "/images/member2.png",
+        name:   "Not Yaron Bro",
+        description: "A bit about Not Yaron and what he does.  Not a lot, though; 2–4 lines work best.  Not Yaron likes to eat well."
+    }
+]
+
 
 const About = () => {
     return (
@@ -19,7 +54,9 @@ const About = () => {
             </div>
             <h3 className='text-3xl'>Approach:</h3>
             <hr className='border-none h-[2px] bg-black mt-[11px]'/>
-            <MemberList/>
+            <div className='mt-5'>
+                <MemberList membersData={memebers}/>
+            </div>
         </>
     )
 }
