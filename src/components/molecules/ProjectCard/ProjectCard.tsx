@@ -5,7 +5,7 @@ const ProjectCard = ({image, name, desc, imagePos}:{image:string, name:string, d
 	return (
 		<div className="mt-8 mb-20 md:mb-32">
 			<Hr className="" />
-			<div className={`mt-20 md:mt-40 justify-between ${imagePos === "left" ? "flex": "flex-row-reverse"}`}>
+			<div className={`mt-20 md:mt-40 justify-between ${imagePos === "left" ? "flex": "flex flex-row-reverse"}`}>
 				<div className="w-[70]">
 					<img src={image} alt={name}/>
 				</div>
