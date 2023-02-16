@@ -1,3 +1,4 @@
+import Hr from '../Hr/Hr';
 export type TMember = {
 	image: string;
 	name: string;
@@ -11,7 +12,7 @@ const Member = ({image, name, description}: TMember) => {
 			<h3 className="mt-[26px]">
 				{name}
 			</h3>
-			<hr className='border-none h-[2px] bg-black mt-[4px]'/>
+			<Hr className='mt-[4px]'/>
 			<p className="font-s2 mt-[33px]">
 				{description}			
 			</p>
