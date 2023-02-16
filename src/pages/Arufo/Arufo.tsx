@@ -1,7 +1,8 @@
 const ArufoData = {
+    mainImage: "/images/Arufabudo/main.png",
     title: "Manufacturing and selling premium boxing gear for warriors who aim to stand out from the crowd.",
     desc: "Our product line will consist of goods including boxing gloves, clothing, and accessories. Arufabudo gear will be available in both, ready-made and custom-made designs. Arufabudo gear will be available in both, ready-made and custom-made designs.",
-    logo: "/images/Arufabudo",
+    logo: "/images/Arufabudo/logo.png",
     brand: [
         {
             title: "Warriorship",
@@ -59,8 +60,8 @@ const ArufoData = {
 
 const Arufo = () => {
     return (
-        <div className="flex">
-            Arufo
+        <div className="flex-col">
+            <img className="w-full m-0" src={ArufoData.mainImage} alt="Arufabudo Main Image"/>
         </div>
     )
 }

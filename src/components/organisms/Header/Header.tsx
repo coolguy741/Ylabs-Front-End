@@ -25,7 +25,10 @@ export const navItems = [
 	},
 ];
 
-const Header = () => {
+const Header = ({whiteThemeEffect, blurEffect}:{
+	whiteThemeEffect: boolean, 		
+	blurEffect: boolean,		
+}) => {
 	const [isOpen, setIsOpen] = useState(false);
 	let location = useLocation();
 
@@ -55,9 +58,9 @@ const Header = () => {
 	};
 
 	return (
-		<div className='absolute top-0 w-screen'>
+		<div className={`absolute top-0 w-full ${whiteThemeEffect ? "" : "dark"}`}>
 			<Headroom>
-				<header className="relative z-50 px-7 lg:px-20 py-8 backdrop-blur-md">
+				<header className={`relative z-50 px-7 lg:px-20 py-8 ${blurEffect ? "backdrop-blur-md" : ""}`}>
 					<div className="flex items-center text-3xl md:text-xl leading-5 text-black dark:text-white">
 						<div className="flex-grow">
 							<Logo />

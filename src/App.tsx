@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Routes, Route, Outlet} from 'react-router-dom';
+import { Routes, Route, Outlet, useLocation} from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Work } from './pages/Work';
 import { About } from './pages/About';
@@ -20,8 +20,7 @@ const lngs = {
 function App() {
   const [Theme, setTheme] = useState('light');
   const value:ThemeContextProps={theme:Theme, setTheme};
-
-
+  
   return (
     <ThemeContext.Provider value={value}>
       <ParallaxProvider>
@@ -43,13 +42,14 @@ function App() {
 
 function Layout(){
   const {t, i18n} = useTranslation();
+  const location = useLocation();
   
   return (
     <ThemeContext.Consumer>
        {({theme, setTheme}) => (
         <>
-          <div className='bg-white text-black dark:bg-black dark:text-white min-h-screen text-pp-neue-montreal'>
-            <Header />
+          <div className='bg-white dark:bg-black text-black dark:text-white min-h-screen text-pp-neue-montreal'>
+            {location.pathname === '/arufo' ? <Header whiteThemeEffect={false} blurEffect={false}/> : <Header whiteThemeEffect={true} blurEffect={true}/>}
             <Outlet />
             {/* <div>{t('description.part2')}</div>
             <Trans i18nKey="description.part1">
