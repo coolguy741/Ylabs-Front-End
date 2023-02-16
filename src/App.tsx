@@ -50,9 +50,7 @@ function Layout(){
         <>
           <div className='bg-white text-black dark:bg-black dark:text-white min-h-screen text-pp-neue-montreal'>
             <Header />
-            <div className='px-7 lg:px-14 pb-14 mt-9'>
-              <Outlet />
-            </div>
+            <Outlet />
             {/* <div>{t('description.part2')}</div>
             <Trans i18nKey="description.part1">
               Edit <code>src/App.js</code> and save to reload.

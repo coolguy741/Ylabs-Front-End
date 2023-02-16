@@ -56,10 +56,11 @@ const PlanifaiData = {
         }, 
     ]
 }
+
 const Planify = () => {
     return (
         <div>
-            
+            Planify
         </div>
     )
 }
