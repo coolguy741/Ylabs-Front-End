@@ -1,6 +1,4 @@
-import React from 'react';
 import  AboutImage from '../../assets/images/about.png';
-import  PlusImage from '../../assets/icons/plus.png';
 import MemberList from '../../components/molecules/MemberList/MemberList';
 import type { TMember } from '../../components/atoms/Member';
 import Hr from '../../components/atoms/Hr/Hr';
@@ -45,8 +43,8 @@ const About = () => {
             <div className='relative'>
                 <div className='absolute top-0 right-0 md:right-[10vw] lg:right-[22vw] '>
                     <img className='' src={AboutImage} alt="About Image"/>
-                    <div className='absolute bottom-0 right-0 w-[74px] h-[74px] bg-red flex justify-center items-center'>
-                        <img src={PlusImage} alt="+" />
+                    <div className='absolute bottom-0 right-0'>
+                        <img src="/Flag.png" alt="Flags of Switzerland" />
                     </div>
                 </div>
             </div>
