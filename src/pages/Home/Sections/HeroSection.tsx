@@ -14,7 +14,7 @@ const HeroSection = () => {
             <div className='relative flex justify-center'>
                 <img className='md:absolute top-0 right-0' src={LogoImage} />
             </div>
-            <div className='relative text-6xl lg:text-9xl max-w-[600px]  md:max-w-[920px] pt-[140px]'>
+            <div className='relative text-6xl lg:text-h1 max-w-[600px]  md:max-w-[920px] pt-[140px]'>
             {
                 state === 1 ? (
                     <HeroTitle initialState={1} />
