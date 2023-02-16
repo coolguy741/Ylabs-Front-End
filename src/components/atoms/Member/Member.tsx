@@ -1,5 +1,3 @@
-import "./Member.css";
-
 export type TMember = {
 	image: string;
 	name: string;

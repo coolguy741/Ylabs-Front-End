@@ -1,4 +1,3 @@
-import "./MemberList.css";
 import Member, {TMember} from "../../atoms/Member/Member";
 
 const MemberList = ({membersData}:{membersData: TMember[]}) => {
