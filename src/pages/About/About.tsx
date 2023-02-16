@@ -49,10 +49,10 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className='relative mb-32 md:mb-52 lg:mb-80 text-4xl lg:text-6xl max-w-[600px] lg:max-w-[790px] pt-[140px]'>
-                Headquartered in Luzern, Switzerland, Ylabs is situated in an ever-dynamic melting pot of innovation & creativity.
+            <div className='relative mb-32 md:mb-52 lg:mb-80 max-w-[600px] lg:max-w-[790px] pt-[140px]'>
+                <h2>Headquartered in Luzern, Switzerland, Ylabs is situated in an ever-dynamic melting pot of innovation & creativity.</h2>
             </div>
-            <h3 className='text-3xl'>Approach:</h3>
+            <h3>Approach:</h3>
             <hr className='border-none h-[2px] bg-black mt-[11px]'/>
             <div className='mt-5'>
                 <MemberList membersData={memebers}/>

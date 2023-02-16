@@ -6,6 +6,24 @@
 	html {
     font-family: pp-neue-montreal;
   }
+	h1{
+		@apply font-medium text-4xl md:text-6xl lg:text-9xl
+	}
+	h2{
+		@apply font-medium text-3xl md:text-4xl lg:text-6xl 
+	}
+	h3{
+		@apply font-medium text-1xl md:text-3xl 
+	}
+	.font-s1 {
+		@apply font-normal text-xl leading-[24px] md:text-3xl md:leading-[40px]
+	}
+	.font-s2 {
+		@apply font-normal md:text-xl
+	}
+	.font-s3 {
+		@apply font-normal text-lg 
+	}
 }
 
 @layer components{
