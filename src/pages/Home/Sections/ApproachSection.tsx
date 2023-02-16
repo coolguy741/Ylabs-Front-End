@@ -1,9 +1,10 @@
+import Hr from "../../../components/atoms/Hr/Hr";
 
 const ApproachSection = () => {
     return (
         <div className='mt-4 flex-column'>
             <h3 className='text-3xl'>Approach:</h3>
-            <hr className='border-none h-[2px] bg-black mt-[11px]'/>
+            <Hr className="mt-[11px]" />
             <div className='flex'>
                 <div className='w-[50%] mt-[10vw] lg:mt-32 text-1xl sm:text-3xl md:text-4xl lg:text-6xl'>
                     <div className=' flex w-[35vw] h-[35vw] max-w-[500px] max-h-[500px] rounded-full items-center justify-center text-white dark:text-black bg-black dark:bg-white z-20'>

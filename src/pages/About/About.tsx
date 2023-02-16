@@ -3,6 +3,7 @@ import  AboutImage from '../../assets/images/about.png';
 import  PlusImage from '../../assets/icons/plus.png';
 import MemberList from '../../components/molecules/MemberList/MemberList';
 import type { TMember } from '../../components/atoms/Member';
+import Hr from '../../components/atoms/Hr/Hr';
 
 const memebers: TMember[]= [
     {
@@ -53,7 +54,7 @@ const About = () => {
                 <h2>Headquartered in Luzern, Switzerland, Ylabs is situated in an ever-dynamic melting pot of innovation & creativity.</h2>
             </div>
             <h3>Approach:</h3>
-            <hr className='border-none h-[2px] bg-black mt-[11px]'/>
+            <Hr className='mt-[11px]'/>
             <div className='mt-5'>
                 <MemberList membersData={memebers}/>
             </div>
