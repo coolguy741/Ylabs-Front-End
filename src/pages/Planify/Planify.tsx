@@ -1,4 +1,4 @@
-const PlanifaiData = {
+const PlanifyData = {
     title: "Manufacturing and selling premium boxing gear for warriors who aim to stand out from the crowd.",
     desc: "Our product line will consist of goods including boxing gloves, clothing, and accessories. Arufabudo gear will be available in both, ready-made and custom-made designs. Arufabudo gear will be available in both, ready-made and custom-made designs.",
     logo: "/images/Arufabudo",

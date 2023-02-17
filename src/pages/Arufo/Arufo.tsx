@@ -1,8 +1,4 @@
 import Hr from "../../components/atoms/Hr/Hr";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/css";
-import "swiper/css/pagination";
 import ImageSlider from "../../components/molecules/ImageSlider/ImageSlider";
 
 const ArufoData = {
@@ -70,10 +66,6 @@ const ArufoData = {
             url: '/images/Arufabudo/image4.png',
             alt: 'image4',
         }, 
-        {
-            url: '/images/Arufabudo/image5.png',
-            alt: 'image5',
-        }, 
     ]
 }
 
@@ -81,7 +73,7 @@ const Arufo = () => {
     return (
         <div className="flex-col">
             <img className="w-full m-0" src={ArufoData.mainImage} alt="Arufabudo Main Image"/>
-            <div className="px-7 lg:px-14 mb-40 mt-10 md:mt-20">
+            <div className="px-7 lg:px-14 pb-40 mt-10 md:mt-20">
                 <h2 className="max-w-[929px]">{ArufoData.title}</h2>
                 <p className="font-s1 max-w-[801px] mt-6 md:mt-12">{ArufoData.desc}</p>
                 <div className="mt-20 md:mt-44 flex justify-center">
