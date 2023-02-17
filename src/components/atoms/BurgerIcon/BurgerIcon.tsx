@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import './BurgerIcon.css';
 
 export interface BurgerIconProps {
 	isOpen: boolean;
