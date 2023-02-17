@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import "./ImageSlider.css";
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination} from "swiper";
 
 type image = {
 	url: string;
