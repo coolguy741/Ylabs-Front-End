@@ -19,12 +19,6 @@ const HeroTitle: React.FC<Props> = ({initialState}) => {
             deleteSpeed={50}
             delaySpeed={1000}
           />
-          <p>
-            Dare to :{' '}
-            <span className='font-bold uppercase'>
-              
-            </span>
-          </p>
       </AnimatePresence>
   );
 };

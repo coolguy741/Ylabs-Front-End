@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Routes, Route, Outlet, useLocation} from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Work } from './pages/Work';
@@ -9,13 +9,13 @@ import { Rapid } from './pages/Rapid/Rapid';
 import { Planify } from './pages/Planify/Planify';
 import { Header } from './components/organisms/Header';
 import { ThemeContext, ThemeContextProps } from './context/ThemeProvider';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation} from 'react-i18next';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
-const lngs = {
-  en: { nativeName: 'English' },
-  de: { nativeName: 'Deutsch' }
-};
+// const lngs = {
+//   en: { nativeName: 'English' },
+//   de: { nativeName: 'Deutsch' }
+// };
 
 function App() {
   const [Theme, setTheme] = useState('light');
@@ -41,7 +41,7 @@ function App() {
 }
 
 function Layout(){
-  const {t, i18n} = useTranslation();
+  // const {t, i18n} = useTranslation();
   const location = useLocation();
   
   return (

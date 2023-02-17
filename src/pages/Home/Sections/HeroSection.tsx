@@ -1,30 +1,39 @@
-import React, { useEffect, useState } from 'react';
 import  LogoImage from '../../../assets/images/logo.png';
 import OrganizationImage from '../../../assets/images/61.png';
-import { HeroTitle } from '../../../components/molecules/HeroTitle';
+import { Typewriter } from 'react-simple-typewriter';
+
+// const disciplines = ['explore', 'attempt', 'discover','differ', 'embrace', 'rebel', 'disrupt'];
 
 const HeroSection = () => {
-    const [state, setState] = useState<number>(1);
-    useEffect(() => {
-        // (state === 1 ? setTimeout(setState(2), 3000) : setTimeout(setState(1), 3000))
-    }, [])
-
     return (
         <div>
             <div className='relative flex justify-center'>
-                <img className='md:absolute top-0 right-0' src={LogoImage} />
+                <img className='md:absolute top-0 right-0' src={LogoImage} alt="Ylabs"/>
             </div>
-            <div className='relative text-6xl lg:text-9xl max-w-[600px]  md:max-w-[920px] pt-[140px]'>
-            {
-                state === 1 ? (
-                    <HeroTitle initialState={1} />
-                        
-                ):(
-                    <>
-                        Hello World.
-                    </>
-                )
-            }
+            <div className='relativemax-w-[600px]  md:max-w-[920px] mt-[140px]'>
+                <div className='min-h-0 lg:min-h-[256px]'>
+                    <h1>
+                        <Typewriter
+                            words={['Transforming startup ideas into market-ready entities']}
+                            loop={0}
+                            cursor
+                            cursorStyle='|'
+                            typeSpeed={70}
+                            deleteSpeed={50}
+                            delaySpeed={1000}
+                        />
+                    </h1>
+                </div>
+                {/* <div className='mt-10 md:mt-20'>
+                    <h2>
+                        Dare to{" "}
+                        <TextLoop>
+                            <span>Explore</span>
+                            <span>Deposit</span>
+                            <span>Play</span>
+                        </TextLoop>
+                    </h2>
+                </div> */}
             </div>
             <div className='mt-10 sm:mt-20 max-w-[610px]'>
                 <p className='font-s2'>
@@ -32,7 +41,7 @@ const HeroSection = () => {
                 </p>
             </div>
             <div className='mt-24 sm:mt-48 relative flex justify-center text-4xl md:text-6xl mb-32'>
-                <img className='w-full' src={OrganizationImage} />
+                <img className='w-full' src={OrganizationImage} alt="Organization"/>
                 <p className='top-[5vw] absolute text-center'>
                     Setting up and managing<br/> 
                     organizations of the future.
