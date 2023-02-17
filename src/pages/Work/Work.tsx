@@ -1,4 +1,5 @@
 import ProjectCard from "../../components/molecules/ProjectCard/ProjectCard";
+import Layout1 from "../../components/organisms/Layout1/Layout1";
 
 const projectsData = [
     {
@@ -23,14 +24,16 @@ const projectsData = [
 
 const Work = () => {
     return (
-        <div className='mt-20'>
-            <h1 className='max-w-[420px] md:max-w-[600px] lg:max-w-[929px]'>Explore our unique, future-forward portfolio.</h1>
-            <div className="mt-8">
-                {projectsData.map((project) => {
-                    return <ProjectCard image={project.image} name={project.name} desc={project.desc} imagePos={project.imagePos}/>
-                })}
+        <Layout1>
+            <div className='mt-20'>
+                <h1 className='max-w-[420px] md:max-w-[600px] lg:max-w-[929px]'>Explore our unique, future-forward portfolio.</h1>
+                <div className="mt-8">
+                    {projectsData.map((project) => {
+                        return <ProjectCard image={project.image} name={project.name} desc={project.desc} imagePos={project.imagePos}/>
+                    })}
+                </div>
             </div>
-        </div>
+        </Layout1>
     )
 }
 

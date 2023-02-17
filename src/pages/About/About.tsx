@@ -2,6 +2,7 @@ import  AboutImage from '../../assets/images/about.png';
 import MemberList from '../../components/molecules/MemberList/MemberList';
 import type { TMember } from '../../components/atoms/Member';
 import Hr from '../../components/atoms/Hr/Hr';
+import Layout1 from '../../components/organisms/Layout1/Layout1';
 
 const memebers: TMember[]= [
     {
@@ -39,7 +40,7 @@ const memebers: TMember[]= [
 
 const About = () => {
     return (
-        <>
+        <Layout1>
             <div className='relative'>
                 <div className='absolute top-0 right-0 md:right-[10vw] lg:right-[22vw] '>
                     <img className='' src={AboutImage} alt="About Image"/>
@@ -56,7 +57,7 @@ const About = () => {
             <div className='mt-5'>
                 <MemberList membersData={memebers}/>
             </div>
-        </>
+        </Layout1>
     )
 }
 
