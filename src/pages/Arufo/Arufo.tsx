@@ -84,10 +84,10 @@ const Arufo = () => {
             <div className="px-7 lg:px-14 mb-40 mt-10 md:mt-20">
                 <h2 className="max-w-[929px]">{ArufoData.title}</h2>
                 <p className="font-s1 max-w-[801px] mt-6 md:mt-12">{ArufoData.desc}</p>
-                <div className="mt-22 md:mt-44 flex justify-center">
+                <div className="mt-20 md:mt-44 flex justify-center">
                     <img src={ArufoData.logo} alt={`${ArufoData.projectName} Logo`} />
                 </div>
-                <h3 className="mt-22 md:mt-44">Brand pillars:</h3>
+                <h3 className="mt-20 md:mt-44">Brand pillars:</h3>
                 <Hr className="mt-[11px]" />
                 <div className="flex">
                     <div className="mt-12 md:mt-24 w-1/2 pr-8">
@@ -105,7 +105,7 @@ const Arufo = () => {
                         }
                     </div>
                 </div>
-                <h3 className="mt-22 md:mt-44">Milestones:</h3>
+                <h3 className="mt-20 md:mt-44">Milestones:</h3>
                 <Hr className="mt-[11px]" />
                 <div className="flex">
                     <div className="w-1/2">
@@ -122,7 +122,7 @@ const Arufo = () => {
                         <img className="float-right" src={ArufoData.milestones.image} alt={`${ArufoData.projectName} milestones image`}/>
                     </div>
                 </div>
-                <h3 className="mt-22 md:mt-44">Project showcase:</h3>
+                <h3 className="mt-20 md:mt-44">Project showcase:</h3>
                 <Hr className="mt-[11px]" />
                 <div className="mt-10 md:mt-20">
                     <ImageSlider images={ArufoData.showcase}/>
