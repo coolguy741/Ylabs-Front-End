@@ -1,0 +1,68 @@
+.burger-icon {
+  width: 32px;
+  height: 24px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.burger-icon span {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 20 43/var(--tw-bg-opacity))
+}
+
+.dark .burger-icon span {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 252 252/var(--tw-bg-opacity))
+}
+
+.burger-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out
+}
+
+.burger-icon span:first-child {
+  top: 0
+}
+
+.burger-icon span:nth-child(2),.burger-icon span:nth-child(3) {
+  top: 12px
+}
+
+.burger-icon span:nth-child(4) {
+  top: 24px
+}
+
+.burger-icon.open span:first-child {
+  top: 18px;
+  width: 0;
+  left: 50%
+}
+
+.burger-icon.open span:nth-child(2) {
+  transform: rotate(45deg)
+}
+
+.burger-icon.open span:nth-child(3) {
+  transform: rotate(-45deg)
+}
+
+.burger-icon.open span:nth-child(4) {
+  top: 18px;
+  width: 0;
+  left: 50%
+}
