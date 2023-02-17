@@ -72,7 +72,7 @@ const ArufoData = {
 const Arufo = () => {
     return (
         <div className="flex-col">
-            <img className="w-full m-0" src={ArufoData.mainImage} alt="Arufabudo Main Image"/>
+            <img className="w-full m-0" src={ArufoData.mainImage} alt="Arufabudo Main"/>
             <div className="px-7 lg:px-14 pb-40 mt-10 md:mt-20">
                 <h2 className="max-w-[929px]">{ArufoData.title}</h2>
                 <p className="font-s1 max-w-[801px] mt-6 md:mt-12">{ArufoData.desc}</p>
@@ -83,7 +83,7 @@ const Arufo = () => {
                 <Hr className="mt-[11px]" />
                 <div className="flex">
                     <div className="mt-12 md:mt-24 w-1/2 pr-8">
-                        <img src={ArufoData.brand.image} alt={`${ArufoData.projectName} brand image`}/>
+                        <img src={ArufoData.brand.image} alt={`${ArufoData.projectName} brand`}/>
                     </div>
                     <div className="w-1/2">
                         {
@@ -111,7 +111,7 @@ const Arufo = () => {
                         }
                     </div>
                     <div className="mt-8 md:mt-16 w-1/2 pl-8">
-                        <img className="float-right" src={ArufoData.milestones.image} alt={`${ArufoData.projectName} milestones image`}/>
+                        <img className="float-right" src={ArufoData.milestones.image} alt={`${ArufoData.projectName} milestones`}/>
                     </div>
                 </div>
                 <h3 className="mt-20 md:mt-44">Project showcase:</h3>

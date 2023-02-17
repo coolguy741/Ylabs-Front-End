@@ -9,7 +9,7 @@ import { Rapid } from './pages/Rapid/Rapid';
 import { Planify } from './pages/Planify/Planify';
 import { Header } from './components/organisms/Header';
 import { ThemeContext, ThemeContextProps } from './context/ThemeProvider';
-import { useTranslation} from 'react-i18next';
+// import { useTranslation} from 'react-i18next';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 // const lngs = {

@@ -30,7 +30,7 @@ const NavigationItem = ({
 			custom={customDelay}
 		>
 			<Link to={href}>
-				<a
+				<p
 					className={classNames(
 						isActive
 							? 'font-semibold'
@@ -39,7 +39,7 @@ const NavigationItem = ({
 					)}
 				>
 					{title}
-				</a>
+				</p>
 			</Link>
 		</motion.li>
 	);

@@ -8,7 +8,7 @@ const LanguageToggle = () => {
 
 	
 	function toggleLanguage(){
-		if(i18n.language == "en") {
+		if(i18n.language === "en") {
 			i18n.changeLanguage("de");
 		}		else {
 			i18n.changeLanguage("en");
