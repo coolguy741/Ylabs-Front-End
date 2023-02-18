@@ -11,7 +11,7 @@ const HeroSection = () => {
             <div className='relative flex justify-center'>
                 <img className='md:absolute top-0 right-0' src={LogoImage} alt="Ylabs"/>
             </div>
-            <div className='relativemax-w-[600px]  md:max-w-[920px] mt-[140px]'>
+            <div className='relative max-w-[600px]  md:max-w-[920px] mt-[140px]'>
                 <div className='min-h-0 lg:min-h-[256px]'>
                     <h1>
                         <Typewriter

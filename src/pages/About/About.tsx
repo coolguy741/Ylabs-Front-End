@@ -42,8 +42,8 @@ const About = () => {
     return (
         <Layout1>
             <div className='relative'>
-                <div className='absolute top-0 right-0 md:right-[10vw] lg:right-[22vw] '>
-                    <img className='' src={AboutImage} alt="About"/>
+                <div className='sm:absolute top-0 right-0 md:right-[10vw] lg:right-[22vw]'>
+                    <img className='w-full' src={AboutImage} alt="About"/>
                     <div className='absolute bottom-0 right-0'>
                         <img src="/Flag.png" alt="Flags of Switzerland" />
                     </div>
