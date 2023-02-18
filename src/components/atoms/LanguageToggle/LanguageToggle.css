@@ -93,22 +93,22 @@ input[type="checkbox"]:checked + label.btn-color-mode-switch-language-inner:afte
 
 
 .dark label.btn-color-mode-switch-language-inner{
-  border-color: #ffffff;
+  border-color: #ffffff!important;
 }
 
 .dark label.btn-color-mode-switch-language-inner:before{
-  color:#ffffff;
+  color:#ffffff!important;
 }
 
 .dark label.btn-color-mode-switch-language-inner:after{
-  background-color: #ffffff;
+  background-color: #ffffff!important;
   color:#11131F;
 }
 
 .darkinput[type="checkbox"]:checked + label.btn-color-mode-switch-language-inner{
-  color: #11131F;
+  color: #11131F!important;
 }
 
 .darkinput[type="checkbox"]:checked + label.btn-color-mode-switch-language-inner:after{
-  background: #ffffff;
+  background: #ffffff!important;
 }
