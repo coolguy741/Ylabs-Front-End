@@ -9,7 +9,7 @@ const HeroSection = () => {
     return (
         <>
             <div className='flex justify-center'>
-                <img className='fixed top-40 right-4 md:right-16 max-w-[300px] sm:max-w-[600px]' src={LogoImage} alt="Ylabs"/>
+                <img className='fixed top-40 right-4 md:right-16 max-w-[400px] sm:max-w-[600px]' src={LogoImage} alt="Ylabs"/>
             </div>
             <div className='relative'>
                 <div className='max-w-[600px]  md:max-w-[920px] mt-[140px]'>
