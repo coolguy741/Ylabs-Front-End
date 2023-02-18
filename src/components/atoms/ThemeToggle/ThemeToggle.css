@@ -17,7 +17,7 @@ label.btn-color-mode-switch-theme-inner{
  
 }
 
-label.btn-color-mode-switch-theme-inner:before{
+input[type="checkbox"]:not(:checked) + label.btn-color-mode-switch-theme-inner:before{
   content: url('./dark.svg');
   position: absolute;
   top: 5px;
@@ -51,6 +51,8 @@ input[type="checkbox"]{
 
 input[type="checkbox"]:checked + label.btn-color-mode-switch-theme-inner:before{
   content: url('./light.svg');
+  position: absolute;
+  top: 5px;
   left: 6px;
 }
 
@@ -59,48 +61,48 @@ input[type="checkbox"]:checked + label.btn-color-mode-switch-theme-inner:after{
   left: 30px;
 }
 
-.white-theme label.btn-color-mode-switch-theme-inner{
+.white label.btn-color-mode-switch-theme-inner{
   border-color: #11131F;
 }
 
-.white-theme label.btn-color-mode-switch-theme-inner:before{
+.white label.btn-color-mode-switch-theme-inner:before{
   color:#ffffff;
 }
 
-.white-theme label.btn-color-mode-switch-theme-inner:after{
+.white label.btn-color-mode-switch-theme-inner:after{
   background-color: #11131F;
   color:#ffffff;
 }
 
-.white-theme input[type="checkbox"]:checked + label.btn-color-mode-switch-theme-inner{
+.white input[type="checkbox"]:checked + label.btn-color-mode-switch-theme-inner{
   color: #fff;
 }
 
-.white-theme input[type="checkbox"]:checked + label.btn-color-mode-switch-theme-inner:after{
+.white input[type="checkbox"]:checked + label.btn-color-mode-switch-theme-inner:after{
   background: #11131F;
 }
 
-.dark-theme label.btn-color-mode-switch-theme-inner{
-  border-color: #ffffff;
+.dark label.btn-color-mode-switch-theme-inner{
+  border-color: #ffffff!important;
 }
 
-.dark-theme label.btn-color-mode-switch-theme-inner:before{
-  color:#ffffff;
+.dark label.btn-color-mode-switch-theme-inner:before{
+  color:#ffffff!important;
 }
 
-.dark-theme label.btn-color-mode-switch-theme-inner:after{
-  background-color: #ffffff;
-  color:#11131F;
+.dark label.btn-color-mode-switch-theme-inner:after{
+  background-color: #ffffff!important;
+  color:#11131F!important;
 }
 
-.dark-theme input[type="checkbox"]:checked + label.btn-color-mode-switch-theme-inner{
-  color: #ffffff;
+.dark input[type="checkbox"]:checked + label.btn-color-mode-switch-theme-inner{
+  color: #ffffff!important;
 }
 
-.dark-theme label.btn-color-mode-switch-theme-inner:before{
-  color:#ffffff;
+.dark label.btn-color-mode-switch-theme-inner:before{
+  color:#ffffff!important;
 }
 
-.dark-theme input[type="checkbox"]:checked + label.btn-color-mode-switch-theme-inner:after{
-  background: #ffffff;
+.dark input[type="checkbox"]:checked + label.btn-color-mode-switch-theme-inner:after{
+  background: #ffffff!important;
 }
