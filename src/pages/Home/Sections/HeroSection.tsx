@@ -1,8 +1,9 @@
 import  LogoImage from '../../../assets/images/logo.png';
 import OrganizationImage from '../../../assets/images/61.png';
 import { Typewriter } from 'react-simple-typewriter';
+import Textra from 'react-textra';
 
-// const disciplines = ['explore', 'attempt', 'discover','differ', 'embrace', 'rebel', 'disrupt'];
+const disciplines = ['explore', 'attempt', 'discover','differ', 'embrace', 'rebel', 'disrupt'];
 
 const HeroSection = () => {
     return (
@@ -24,16 +25,14 @@ const HeroSection = () => {
                         />
                     </h1>
                 </div>
-                {/* <div className='mt-10 md:mt-20'>
+                <div className='mt-10 md:mt-20'>
                     <h2>
                         Dare to{" "}
-                        <TextLoop>
-                            <span>Explore</span>
-                            <span>Deposit</span>
-                            <span>Play</span>
-                        </TextLoop>
+                        <span className='uppercase text-blue-600 dark:text-blue-400 '>
+                            <Textra effect='flip' duration={1000} data={disciplines} />
+                        </span>
                     </h2>
-                </div> */}
+                </div>
             </div>
             <div className='mt-10 sm:mt-20 max-w-[610px]'>
                 <p className='font-s2'>
