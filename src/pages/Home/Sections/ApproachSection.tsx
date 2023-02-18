@@ -2,7 +2,7 @@ import Hr from "../../../components/atoms/Hr/Hr";
 
 const ApproachSection = () => {
     return (
-        <div className='mt-4 flex-column'>
+        <div className='relative mt-4 flex-column'>
             <h3 className='text-3xl'>Approach:</h3>
             <Hr className="mt-[11px]" />
             <div className='flex'>
