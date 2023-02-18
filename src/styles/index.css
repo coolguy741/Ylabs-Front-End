@@ -4,24 +4,35 @@
 
 @layer base{
 	html {
-    font-family: pp-neue-montreal;
+    font-family: "pp-neue-montreal-book";
   }
 	h1{
-		@apply font-medium text-4xl md:text-6xl lg:text-9xl
+		@apply font-montrealMedium text-4xl md:text-6xl lg:text-9xl
 	}
 	h2{
-		@apply font-medium text-3xl md:text-4xl lg:text-6xl 
+		@apply font-montrealMedium text-3xl md:text-4xl lg:text-6xl 
 	}
 	h3{
-		@apply font-medium text-1xl md:text-3xl 
+		@apply font-montrealMedium text-1xl md:text-3xl 
 	}
 	.font-s1 {
-		@apply font-normal text-xl leading-[24px] md:text-3xl md:leading-[40px]
+		@apply font-montrealBook text-xl leading-[24px] md:text-3xl md:leading-[40px]
 	}
 	.font-s2 {
-		@apply font-normal md:text-xl
+		@apply font-montrealBook md:text-xl
 	}
 	.font-s3 {
-		@apply font-normal text-lg 
+		@apply font-montrealBook text-lg 
 	}
+}
+
+
+@font-face {
+  font-family: "PP Neue Montreal Book";
+  src: url("/public/font/PPNeueMontreal-Book.otf");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal Medium";
+  src: url("/public/font/PPNeueMontreal-Medium.otf");
 }

@@ -48,7 +48,7 @@ function Layout(){
     <ThemeContext.Consumer>
        {({theme, setTheme}) => (
         <>
-          <div className='bg-white dark:bg-black text-black dark:text-white min-h-screen text-pp-neue-montreal'>
+          <div className='bg-white dark:bg-black text-black dark:text-white min-h-screen font-montrealBook'>
             {location.pathname === '/arufo' ? <Header whiteThemeEffect={false} blurEffect={false}/> : <Header whiteThemeEffect={true} blurEffect={true}/>}
             <Outlet />
             {/* <div>{t('description.part2')}</div>
