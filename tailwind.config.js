@@ -135,7 +135,8 @@ module.exports = {
         red: "#FF0000",
       },
       fontFamily: {
-        "pp-neue-montreal": ["PP Neue Montreal"],
+        montrealBook: ["PP Neue Montreal Book"],
+        montrealMedium: ["PP Neue Montreal Medium"],
       },
     },
   },
