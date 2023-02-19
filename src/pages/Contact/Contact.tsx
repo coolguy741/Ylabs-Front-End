@@ -1,4 +1,3 @@
-import React from 'react';
 import Hr from '../../components/atoms/Hr/Hr';
 import Layout1 from '../../components/organisms/Layout1/Layout1';
 
