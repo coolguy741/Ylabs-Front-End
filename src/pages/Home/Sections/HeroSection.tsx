@@ -15,24 +15,8 @@ const HeroSection = () => {
                 <div className='max-w-[600px]  md:max-w-[920px] mt-[140px]'>
                     <div className='min-h-0 lg:min-h-[256px]'>
                         <h1>
-                            <Typewriter
-                                words={['Transforming startup ideas into market-ready entities']}
-                                loop={0}
-                                cursor
-                                cursorStyle='|'
-                                typeSpeed={70}
-                                deleteSpeed={50}
-                                delaySpeed={1000}
-                            />
+                            Transforming startup ideas into market-ready entities
                         </h1>
-                    </div>
-                    <div className='mt-10 md:mt-20'>
-                        <h2>
-                            Dare to{" "}
-                            <span className='uppercase text-blue-600 dark:text-blue-400 '>
-                                <Textra effect='flip' duration={1000} stopDuration={1000} data={disciplines} />
-                            </span>
-                        </h2>
                     </div>
                 </div>
                 <div className='mt-10 sm:mt-20 max-w-[610px]'>
