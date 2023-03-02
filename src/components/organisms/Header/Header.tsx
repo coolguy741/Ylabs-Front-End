@@ -13,11 +13,11 @@ import LanguageToggle from '../../atoms/LanguageToggle/LanguageToggle';
 export const navItems = [
 	{
 		href: '/about',
-		title: 'About',
+		title: 'About,',
 	},
 	{
 		href: '/work',
-		title: 'Work',
+		title: 'Work,',
 	},
 	{
 		href: '/contact',

@@ -33,7 +33,7 @@ const NavigationItem = ({
 				<p
 					className={classNames(
 						isActive
-							? 'font-semibold'
+							? 'border-solid border-b-2 border-black dark:border-white'
 							: '',
 						'uppercase md:underlined transition'
 					)}
