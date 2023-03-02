@@ -24,7 +24,7 @@ const HeroSection = () => {
                         Since 2017, we have been conceptualizing, developing, and directing revolutionary businesses. We dare to attempt what hasn’t been attempted before, embrace the unknown, and have a great time doing so.
                     </p>
                 </div>
-                <div className='mt-24 sm:mt-48 relative flex justify-center text-4xl md:text-6xl mb-32'>
+                <div className='mt-24 sm:mt-48 relative flex justify-center text-xl sm:text-3xl md:text-4xl lg:text-6xl mb-32'>
                     <img className='w-full' src={OrganizationImage} alt="Organization"/>
                     <p className='top-[5vw] absolute text-center'>
                         Setting up and managing<br/> 
