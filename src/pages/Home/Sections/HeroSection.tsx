@@ -1,15 +1,13 @@
-import  LogoImage from '../../../assets/images/logo.png';
 import OrganizationImage from '../../../assets/images/61.png';
-import { Typewriter } from 'react-simple-typewriter';
-import Textra from 'react-textra';
-
-const disciplines = ['explore', 'attempt', 'discover','differ', 'embrace', 'rebel', 'disrupt'];
+import ThreeDLogo from '../../../components/molecules/ThreeDLogo/ThreeDLogo';
 
 const HeroSection = () => {
     return (
         <>
             <div className='flex justify-center'>
-                <img className='fixed top-40 right-4 md:right-16 max-w-[400px] sm:max-w-[600px]' src={LogoImage} alt="Ylabs"/>
+                <div className='sm:absolute top-40 right-4 md:right-16 w-[90vw] h-[98vw] sm:w-[526px] sm:h-[580px]'>
+                    <ThreeDLogo bgColor={true}/>
+                </div>
             </div>
             <div className='relative'>
                 <div className='max-w-[600px]  md:max-w-[920px] mt-[140px]'>
@@ -24,7 +22,7 @@ const HeroSection = () => {
                         Since 2017, we have been conceptualizing, developing, and directing revolutionary businesses. We dare to attempt what hasn’t been attempted before, embrace the unknown, and have a great time doing so.
                     </p>
                 </div>
-                <div className='mt-24 sm:mt-48 relative flex justify-center text-4xl md:text-6xl mb-32'>
+                <div className='font-montrealBook mt-24 sm:mt-48 relative flex justify-center text-xl xsm:text-2xl sm:text-3xl md:text-4xl lg:text-6xl mb-32'>
                     <img className='w-full' src={OrganizationImage} alt="Organization"/>
                     <p className='top-[5vw] absolute text-center'>
                         Setting up and managing<br/> 
