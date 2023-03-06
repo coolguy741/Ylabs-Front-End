@@ -1,11 +1,13 @@
-import  LogoImage from '../../../assets/images/logo.png';
 import OrganizationImage from '../../../assets/images/61.png';
+import ThreeDLogo from '../../../components/molecules/ThreeDLogo/ThreeDLogo';
 
 const HeroSection = () => {
     return (
         <>
             <div className='flex justify-center'>
-                <img className='sm:absolute top-40 right-4 md:right-16 max-w-[400px] sm:max-w-[600px]' src={LogoImage} alt="Ylabs images"/>
+                <div className='sm:absolute top-40 right-4 md:right-16 w-[90vw] h-[98vw] sm:w-[526px] sm:h-[580px]'>
+                    <ThreeDLogo bgColor={true}/>
+                </div>
             </div>
             <div className='relative'>
                 <div className='max-w-[600px]  md:max-w-[920px] mt-[140px]'>

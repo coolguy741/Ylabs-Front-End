@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
+import { AnimatePresence } from 'framer-motion';
 import { Typewriter} from 'react-simple-typewriter';
 
 interface Props {
