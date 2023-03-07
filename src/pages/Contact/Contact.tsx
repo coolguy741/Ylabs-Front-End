@@ -6,16 +6,16 @@ const Contact = () => {
         <Layout1>
             <div className=''>
                 <div className='flex'>
-                    <h1 className='w-3/5 sm:mt-20 mb-20 font-medium text-4xl md:text-6xl lg:text-9xl'>
+                    <h1 className='w-3/5 sm:mt-20 mb-20 text-4xl md:text-6xl lg:text-9xl'>
                         Hi!<br/>
                         Let's get to know<br/>
-                        each other<br/>
+                        each other!<br/>
                     </h1>
                     <div className='w-2/5'>
                         <img src='/images/smile.png' alt="smile"/>
                     </div>
                 </div>
-                <div className='font-medium text-3xl md:text-4xl lg:text-6xl'>
+                <div className='font-h2 text-3xl md:text-4xl lg:text-6xl'>
                     <Hr className='mb-8'/>
                     <div className='flex'>
                         <div className='w-1/3'>Office hours:</div>

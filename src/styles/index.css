@@ -4,7 +4,7 @@
 
 @layer base{
 	html {
-    font-family: "pp-neue-montreal-book";
+    @apply font-montrealBook;
   }
 	h1{
 		@apply font-montrealMedium text-4xl md:text-6xl lg:text-9xl
@@ -23,6 +23,15 @@
 	}
 	.font-s3 {
 		@apply font-montrealBook text-lg 
+	}
+	.font-h1 {
+		@apply font-montrealMedium text-4xl md:text-6xl lg:text-9xl
+	}
+	.font-h2{
+		@apply font-montrealMedium text-3xl md:text-4xl lg:text-6xl 
+	}
+	.font-h3{
+		@apply font-montrealMedium text-1xl md:text-3xl 
 	}
 }
 

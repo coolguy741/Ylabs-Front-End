@@ -21,16 +21,33 @@ const ThreeDLogo = ({bgColor}:ThreeDLogoProps) => {
 
     const loader = new OBJLoader();
     loader.load(
-      './logo3D.obj',
+      './YLabs.obj',
       (object) => {
-        const material = new THREE.MeshBasicMaterial({ color: 0x00bfff});
+        // const texture = new THREE.TextureLoader().load('./logo_texture.png');
         object.traverse((child) => {
           if (child instanceof THREE.Mesh) {
-            child.material = material;
+            // child.material.map = texture;
+            // child.material.emissive = new THREE.Color(0xffffff);
+            // child.material.emissiveIntensity = 0.3;
+            // child.material.emissive.map = texture;
           }
         });
-        object.position.set(-0.015, -0.09, 0);
-        scene.add(object);
+        //set the pivote point
+        const pivot = new THREE.Object3D();
+        pivot.position.set(0, 0, 0);
+        scene.add(pivot);
+
+        // Move the object to the pivot point
+        object.position.set(0, 0, 0);
+        pivot.add(object);
+
+        const animate = () => {
+          requestAnimationFrame(animate);
+          object.rotation.y += 0.02;
+          renderer.render(scene, camera);
+        };
+    
+        animate();
       },
       (xhr) => {
         console.log((xhr.loaded / xhr.total * 100) + '% loaded');
@@ -40,23 +57,28 @@ const ThreeDLogo = ({bgColor}:ThreeDLogoProps) => {
       }
     );
 
-    renderer = new THREE.WebGLRenderer({ antialias: true , alpha: true });
+    const light1 = new THREE.DirectionalLight(0xffffff, 1);
+    light1.position.set(0, 0.3, 0);
+    light1.target.position.set(0, 0, 0);
+    scene.add(light1);
+
+    const light2 = new THREE.DirectionalLight(0xffffff, 0.5);
+    light2.position.set(0.1, 0, 1);
+    light2.target.position.set(0, 0, 0);
+    scene.add(light2);
+
+    const light3 = new THREE.DirectionalLight(0xffffff, 0.5);
+    light3.position.set(-1, 0, 0);
+    light3.target.position.set(0, 0, 0);
+    scene.add(light3);
+
+    renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true  });
     renderer.setSize(container.clientWidth, container.clientHeight);
     renderer.setPixelRatio(window.devicePixelRatio);
 
     container.appendChild(renderer.domElement);
     
     console.log("first children", scene.children);
-
-    const animate = () => {
-      requestAnimationFrame(animate);
-      // scene.children[0].rotation.x += 0.1;
-      // scene.children[0].rotation.y += 0.1;
-      
-      renderer.render(scene, camera);
-    };
-
-    animate();
 
     return () => {
       container.removeChild(renderer.domElement);
