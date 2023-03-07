@@ -21,9 +21,9 @@ const ThreeDLogo = ({bgColor}:ThreeDLogoProps) => {
 
     const loader = new OBJLoader();
     loader.load(
-      './YLabs.obj',
+      './object/YLabs.obj',
       (object) => {
-        // const texture = new THREE.TextureLoader().load('./logo_texture.png');
+        // const texture = new THREE.TextureLoader().load('./texture/logo_texture.png');
         object.traverse((child) => {
           if (child instanceof THREE.Mesh) {
             // child.material.map = texture;
