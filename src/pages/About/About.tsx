@@ -7,32 +7,38 @@ import Layout1 from '../../components/organisms/Layout1/Layout1';
 
 const memebers: TMember[]= [
     {
-        image: "/images/member1.png",
+        image: "/images/member.png",
+        imageHover: "/images/memberHover.png",
         name:   "Yaron Finger",
         description: "A bit about Yaron and what he does.  Not a lot, though; 2–4 lines work best.  Yaron likes to eat well."
-    }, 
+    },
     {
-        image: "/images/member2.png",
+        image: "/images/member.png",
+        imageHover: "/images/memberHover.png",
         name:   "Not Yaron Fanger",
         description: "A bit about Not Yaron and what he does.  Not a lot, though; 2–4 lines work best.  Not Yaron likes to eat well."
     }, 
     {
-        image: "/images/member2.png",
+        image: "/images/member.png",
+        imageHover: "/images/memberHover.png",
         name:   "Also Not Yaron Finger",
         description: "A bit about Not Yaron and what he does.  Not a lot, though; 2–4 lines work best.  Not Yaron likes to eat well."
     }, 
     {
-        image: "/images/member2.png",
+        image: "/images/member.png",
+        imageHover: "/images/memberHover.png",
         name:   "Still Not Mr Fanger",
         description: "A bit about Not Yaron and what he does.  Not a lot, though; 2–4 lines work best.  Not Yaron likes to eat well."
     }, 
     {
-        image: "/images/member2.png",
+        image: "/images/member.png",
+        imageHover: "/images/memberHover.png",
         name:   "Sure Isn’t Him",
         description: "A bit about Not Yaron and what he does.  Not a lot, though; 2–4 lines work best.  Not Yaron likes to eat well."
     },
     {
-        image: "/images/member2.png",
+        image: "/images/member.png",
+        imageHover: "/images/memberHover.png",
         name:   "Not Yaron Bro",
         description: "A bit about Not Yaron and what he does.  Not a lot, though; 2–4 lines work best.  Not Yaron likes to eat well."
     }
@@ -55,7 +61,7 @@ const About = () => {
             </div>
             <h3>Approach:</h3>
             <Hr className='mt-[11px]'/>
-            <div className='mt-5'>
+            <div className='mt-20'>
                 <MemberList membersData={memebers}/>
             </div>
         </Layout1>
