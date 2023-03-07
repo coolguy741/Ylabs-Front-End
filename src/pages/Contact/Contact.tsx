@@ -1,5 +1,6 @@
 import Hr from '../../components/atoms/Hr/Hr';
 import Layout1 from '../../components/organisms/Layout1/Layout1';
+import SwissFlag from '../../assets/icons/Swiss_Flag.svg';
 
 const Contact = () => {
     return (
@@ -26,7 +27,7 @@ const Contact = () => {
                         <div className='w-1/3'>Email:</div>
                         <div className='w-2/3'>hello@ylabs.swiss</div>
                     </div>
-                    <Hr className='mt-9 mb-8'/>
+                    <Hr className='mt-9 mb-8'/> 
                     <div className='flex'>
                         <div className='w-1/3'>Telephone:</div>
                         <div className='w-2/3'>+41 79 821 60 88</div>
@@ -37,12 +38,12 @@ const Contact = () => {
                         <div className='w-1/3'>Instagram</div>
                         <div className='w-1/3'>Facebook</div>
                     </div>
-                    <Hr className='mt-9 mb-8'/>
+                    <Hr className='mt-9 mb-[23px]'/>
                     <div className='flex justify-between'>
-                        <div>Sempacherstrasse 5, 6003 Luzern, Switzerland</div>
-                        <img src="/Flag.png" alt='Flags of Switzerland'/>
+                        <div className='my-auto'>Sempacherstrasse 5, 6003 Luzern, Switzerland</div>
+                        <img className="w-[76px] h-[76px]"src={SwissFlag} alt='Flags of Switzerland'/>
                     </div>
-                    <Hr className='mt-9 mb-8'/>
+                    <Hr className='mt-[23px] mb-8'/>
                 </div>
             </div>
         </Layout1>
