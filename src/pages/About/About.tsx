@@ -1,4 +1,5 @@
 import  AboutImage from '../../assets/images/about.png';
+import SwissFlag from '../../assets/icons/Swiss_Flag.svg'
 import MemberList from '../../components/molecules/MemberList/MemberList';
 import type { TMember } from '../../components/atoms/Member';
 import Hr from '../../components/atoms/Hr/Hr';
@@ -45,7 +46,7 @@ const About = () => {
                 <div className='sm:absolute top-0 right-0 md:right-[10vw] lg:right-[22vw]'>
                     <img className='w-full' src={AboutImage} alt="About"/>
                     <div className='absolute bottom-0 right-0'>
-                        <img src="/Flag.png" alt="Flags of Switzerland" />
+                        <img className='w-[76px] h-[76px]'src={SwissFlag} alt="Flags of Switzerland" />
                     </div>
                 </div>
             </div>
