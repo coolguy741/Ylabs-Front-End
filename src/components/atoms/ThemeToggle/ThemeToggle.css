@@ -18,14 +18,14 @@ label.btn-color-mode-switch-theme-inner{
 }
 
 input[type="checkbox"]:not(:checked) + label.btn-color-mode-switch-theme-inner:before{
-  content: url('./dark.svg');
+  content: url('./dark_black.svg');
   position: absolute;
   top: 5px;
   right: 6px;
 }
 
 label.btn-color-mode-switch-theme-inner:after{
-  content: url('./light.svg');
+  content: url('./light_white.svg');
   width: 24px;
   height: 24px;
   border-radius: 12px;
@@ -50,14 +50,14 @@ input[type="checkbox"]{
 }
 
 input[type="checkbox"]:checked + label.btn-color-mode-switch-theme-inner:before{
-  content: url('./light.svg');
+  content: url('./light_white.svg');
   position: absolute;
   top: 5px;
   left: 6px;
 }
 
 input[type="checkbox"]:checked + label.btn-color-mode-switch-theme-inner:after{
-  content: url('./dark.svg');
+  content: url('./dark_black.svg');
   left: 30px;
 }
 
