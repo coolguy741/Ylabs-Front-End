@@ -76,14 +76,14 @@ const Arufo = () => {
             <div className="px-7 lg:px-14 pb-40 mt-10 md:mt-20">
                 <h2 className="max-w-[929px]">{ArufoData.title}</h2>
                 <p className="font-s1 max-w-[801px] mt-6 md:mt-12">{ArufoData.desc}</p>
-                <div className="mt-20 md:mt-44 flex justify-center">
+                <div className="mt-20 md:mt-64 flex justify-center">
                     <img className="w-2/3 sm:w-1/2" src={ArufoData.logo} alt={`${ArufoData.projectName} Logo`} />
                 </div>
-                <h3 className="mt-20 md:mt-44">Brand pillars:</h3>
+                <h3 className="mt-20 md:mt-64">Brand pillars:</h3>
                 <Hr className="mt-[11px]" />
                 <div className="flex">
                     <div className="mt-12 md:mt-24 w-1/2 pr-8">
-                        <img src={ArufoData.brand.image} alt={`${ArufoData.projectName} brand`}/>
+                        <img className="transform hover:scale-110 transition-transform" src={ArufoData.brand.image} alt={`${ArufoData.projectName} brand`}/>
                     </div>
                     <div className="w-1/2">
                         {
@@ -111,7 +111,7 @@ const Arufo = () => {
                         }
                     </div>
                     <div className="mt-8 md:mt-16 w-1/2 pl-8">
-                        <img className="float-right" src={ArufoData.milestones.image} alt={`${ArufoData.projectName} milestones`}/>
+                        <img className="float-right transform hover:scale-110 transition-transform" src={ArufoData.milestones.image} alt={`${ArufoData.projectName} milestones`}/>
                     </div>
                 </div>
                 <h3 className="mt-20 md:mt-44">Project showcase:</h3>
