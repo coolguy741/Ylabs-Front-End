@@ -8,10 +8,10 @@ export type TMember = {
 
 const Member = ({image, name, description, imageHover}: TMember) => {
 	return (
-		<div className="flex-col max-w-[315px]">
+		<div className="flex-col w-1/4">
 			<div className="group w-full bg-red-500">
 					<img className="group-hover:hidden w-full" src={image} alt={name} />
-					<img className="hidden group-hover:flex" src={imageHover} alt={name} />
+					<img className="hidden group-hover:flex w-full" src={imageHover} alt={name} />
 			</div>
 			<h3 className="mt-[26px]">
 				{name}
