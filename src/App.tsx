@@ -49,12 +49,8 @@ function Layout(){
        {({theme, setTheme}) => (
         <>
           <div className='bg-white dark:bg-black text-black dark:text-white min-h-screen font-montrealBook'>
-            {location.pathname === '/arufo' ? <Header whiteThemeEffect={false} blurEffect={false}/> : <Header whiteThemeEffect={true} blurEffect={true}/>}
+            <Header/> 
             <Outlet />
-            {/* <div>{t('description.part2')}</div>
-            <Trans i18nKey="description.part1">
-              Edit <code>src/App.js</code> and save to reload.
-            </Trans> */}
           </div>
         </>
       )}

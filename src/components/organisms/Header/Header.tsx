@@ -24,10 +24,7 @@ export const navItems = [
 	},
 ];
 
-const Header = ({whiteThemeEffect, blurEffect}:{
-	whiteThemeEffect: boolean, 		
-	blurEffect: boolean,		
-}) => {
+const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	let location = useLocation();
 
@@ -57,8 +54,8 @@ const Header = ({whiteThemeEffect, blurEffect}:{
 	};
 
 	return (
-		<div className={`absolute top-0 w-full ${whiteThemeEffect ? "" : "dark"}`}>
-				<header className={`relative z-50 px-7 lg:px-20 py-8 ${blurEffect ? "backdrop-blur-md" : ""}`}>
+		<div className={`absolute top-0 w-full ${location.pathname === '/arufo' ? "dark" : ""}`}>
+				<header className="relative z-50 px-7 lg:px-20 py-8">
 					<div className="flex items-center text-3xl md:text-xl leading-5 text-black dark:text-white">
 						<div className="flex-grow">
 							<Logo />
