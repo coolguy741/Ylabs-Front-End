@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Routes, Route, Outlet, useLocation} from 'react-router-dom';
+import { Routes, Route, Outlet} from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Work } from './pages/Work';
 import { About } from './pages/About';
@@ -41,8 +41,6 @@ function App() {
 }
 
 function Layout(){
-  // const {t, i18n} = useTranslation();
-  const location = useLocation();
   
   return (
     <ThemeContext.Consumer>
