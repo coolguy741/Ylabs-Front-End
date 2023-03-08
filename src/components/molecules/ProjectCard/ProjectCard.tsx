@@ -23,7 +23,7 @@ const ProjectCard = ({image, icon, name, desc, link}:{image:string, icon:{exist:
 						<h2 className="mb-6">{name}</h2>
 						<div className="flex justify-between w-full relative">
 							<p className="max-w-[503px] font-h3">{desc}</p>
-							<img className="w-[73px] h-[73px] absolute bottom-0 right-0" src={theme === "dark" ? ArrowIconWhite : ArrowIconDark} alt="Right Arrow"/>
+							<Link to = {link}><img className="w-[73px] h-[73px] absolute bottom-0 right-0" src={theme === "dark" ? ArrowIconWhite : ArrowIconDark} alt="Right Arrow"/></Link>
 						</div>
 					</div>
 				</div>
