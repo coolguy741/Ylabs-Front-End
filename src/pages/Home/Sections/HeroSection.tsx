@@ -5,7 +5,7 @@ const HeroSection = () => {
     return (
         <>
             <div className='flex justify-center'>
-                <div className='sm:absolute top-40 right-4 md:right-16 w-[90vw] h-[98vw] sm:w-[526px] sm:h-[580px]'>
+                <div className='sm:absolute top-40 right-4 md:right-8 w-[90vw] h-[98vw] sm:w-[600px] sm:h-[750px]'>
                     <ThreeDLogo bgColor={true}/>
                 </div>
             </div>

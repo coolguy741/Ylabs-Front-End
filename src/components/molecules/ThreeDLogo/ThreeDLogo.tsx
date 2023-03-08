@@ -93,13 +93,13 @@ const ThreeDLogo = ({bgColor}:ThreeDLogoProps) => {
 
       container = mountRef.current!;
       camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.001, 10000);
-      camera.position.set(0, 0.02, 0.25);
+      camera.position.set(0, 0.3, 0.95);
 
       scene = new THREE.Scene();
 
       const loader = new GLTFLoader();
       loader.load(
-        './object/YLabs_Logo.glb',
+        './object/Ylabs_3D_Object_Logo.glb',
         ( gltf ) => {
           scene.add( gltf.scene );
           const animate = () => {

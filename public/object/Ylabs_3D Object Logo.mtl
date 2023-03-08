@@ -1,0 +1,17 @@
+newmtl Metal
+illum 7
+Kd 0.807843 0.807843 0.807843
+adobe_interior_color 1 1 1
+Ni 1
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 0
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd Ylabs_3D Object Logo/Metal_baseColor.jpg
