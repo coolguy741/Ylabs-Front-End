@@ -1,20 +1,32 @@
 import Hr from "../../atoms/Hr/Hr";
 import { Link } from "react-router-dom";
+import ArrowIconDark from "../../../assets/icons/ArrowIconDark.png";
+import ArrowIconWhite from "../../../assets/icons/ArrowIconWhite.png";
+import { useEffect } from "react";
+import { useTheme } from "../../../context/ThemeProvider";
 
-const ProjectCard = ({image, name, desc, imagePos, link}:{image:string, name:string, desc:string, imagePos:string, link:string,
+const ProjectCard = ({image, icon, name, desc, link}:{image:string, icon:string, name:string, desc:string, link:string,
 }) => {
+	const {theme} = useTheme();
+
 	return (
-		<div className="mt-8 mb-20 md:mb-32">
+		<div className="pb-20 md:pb-[85px]">
 			<Hr className="" />
-			<div className={`mt-20 md:mt-40 justify-between ${imagePos === "left" ? "flex": "flex flex-row-reverse"}`}>
-				<div className="w-[70]">
+			<div className="mt-10 md:mt-[85px] justify-between flex">
+				<div className="w-[50] relative">
 					<Link to = {link}>
 						<img src={image} alt={name}/>
 					</Link>
+					{ icon === "" ? <></> :<img className="absolute -top-[60px] -right-[60px]" src="./icons/coming_soon_icon.png" alt={icon}/> }
 				</div>
-				<div className={`w-1/3 flex-col ${imagePos === "left" ? "ml-16": "mr-16"}`}>
-					<h2 className="mb-6">{name}</h2>
-					<p className="max-w-[335px] font-medium text-1xl md:text-3xl">{desc}</p>
+				<div className="w-1/2 flex-col relative ml-16">
+					<div className="absolute bottom-0 w-full">
+						<h2 className="mb-6">{name}</h2>
+						<div className="flex justify-between w-full relative">
+							<p className="max-w-[503px] font-h3">{desc}</p>
+							<img className="w-[73px] h-[73px] absolute bottom-0 right-0" src={theme === "dark" ? ArrowIconWhite : ArrowIconDark} alt="coming soon icon"/>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

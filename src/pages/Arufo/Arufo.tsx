@@ -11,15 +11,15 @@ const ArufoData = {
         image: '/images/Arufabudo/brand.png',
         content: [
             {
-                title: "01  Warriorship",
+                title: "01.  Warriorship",
                 desc: "True boxers and combat sportsmen fit the warrior label perfectly. The discipline, resilience, and honor they possess are attributes which resonate with the drive behind the brand, and with the market segment we aim to serve."
             },
             {
-                title: "02  Unity",
+                title: "02.  Unity",
                 desc: "Our products are symbolic of the interconnected community we are building. On the surface, people see high quality boxing gear. However, at our core we are a family of diverse individuals who strive to become the best version of themselves.",
             },
             {
-                title: "03  Personalization",
+                title: "03.  Personalization",
                 desc:  "All Arufabudo products are customizable with affixable patches containing scannable individual IDs. Our customers can own a piece of history, knowing that their glove, garment, or accessory is one of a kind."
             }
         ],
