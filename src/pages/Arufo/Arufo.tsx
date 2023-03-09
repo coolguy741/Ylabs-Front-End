@@ -83,7 +83,7 @@ const Arufo = () => {
                 <Hr className="mt-[11px]" />
                 <div className="flex">
                     <div className="mt-12 md:mt-24 w-1/2 pr-8">
-                        <img className="transform hover:scale-110 transition-transform" src={ArufoData.brand.image} alt={`${ArufoData.projectName} brand`}/>
+                        <img className="transform" src={ArufoData.brand.image} alt={`${ArufoData.projectName} brand`}/>
                     </div>
                     <div className="w-1/2">
                         {
@@ -111,7 +111,7 @@ const Arufo = () => {
                         }
                     </div>
                     <div className="mt-8 md:mt-16 w-1/2 pl-8">
-                        <img className="float-right transform hover:scale-110 transition-transform" src={ArufoData.milestones.image} alt={`${ArufoData.projectName} milestones`}/>
+                        <img className="float-right" src={ArufoData.milestones.image} alt={`${ArufoData.projectName} milestones`}/>
                     </div>
                 </div>
                 <h3 className="mt-20 md:mt-44">Project showcase:</h3>
