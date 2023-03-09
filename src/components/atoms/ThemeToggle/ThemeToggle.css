@@ -17,15 +17,15 @@ label.btn-color-mode-switch-theme-inner{
  
 }
 
-input[type="checkbox"]:not(:checked) + label.btn-color-mode-switch-theme-inner:before{
-  content: url('./dark_black.svg');
+.white label.btn-color-mode-switch-theme-inner:before{
+  
   position: absolute;
   top: 5px;
   right: 6px;
 }
 
 label.btn-color-mode-switch-theme-inner:after{
-  content: url('./light_white.svg');
+  content: url('./sun_white.svg');
   width: 24px;
   height: 24px;
   border-radius: 12px;
@@ -50,14 +50,14 @@ input[type="checkbox"]{
 }
 
 input[type="checkbox"]:checked + label.btn-color-mode-switch-theme-inner:before{
-  content: url('./light_white.svg');
+  content: url('./sun_white.svg');
   position: absolute;
   top: 5px;
   left: 6px;
 }
 
 input[type="checkbox"]:checked + label.btn-color-mode-switch-theme-inner:after{
-  content: url('./dark_black.svg');
+  content: url('./moon_black.svg');
   left: 30px;
 }
 
@@ -66,43 +66,24 @@ input[type="checkbox"]:checked + label.btn-color-mode-switch-theme-inner:after{
 }
 
 .white label.btn-color-mode-switch-theme-inner:before{
-  color:#ffffff;
+  content: url('./moon_black.svg');
 }
 
 .white label.btn-color-mode-switch-theme-inner:after{
+  content: url('./sun_white.svg');
   background-color: #11131F;
-  color:#ffffff;
 }
 
-.white input[type="checkbox"]:checked + label.btn-color-mode-switch-theme-inner{
-  color: #fff;
-}
-
-.white input[type="checkbox"]:checked + label.btn-color-mode-switch-theme-inner:after{
-  background: #11131F;
-}
 
 .dark label.btn-color-mode-switch-theme-inner{
-  border-color: #ffffff!important;
+  border-color: #ffffff;
 }
 
 .dark label.btn-color-mode-switch-theme-inner:before{
-  color:#ffffff!important;
+  content: url('./moon_white.svg');
 }
 
 .dark label.btn-color-mode-switch-theme-inner:after{
-  background-color: #ffffff!important;
-  color:#11131F!important;
-}
-
-.dark input[type="checkbox"]:checked + label.btn-color-mode-switch-theme-inner{
-  color: #ffffff!important;
-}
-
-.dark label.btn-color-mode-switch-theme-inner:before{
-  color:#ffffff!important;
-}
-
-.dark input[type="checkbox"]:checked + label.btn-color-mode-switch-theme-inner:after{
-  background: #ffffff!important;
+  content: url('./sun_black.svg');
+  background-color: #ffffff;
 }
