@@ -60,7 +60,7 @@ const Header = () => {
 						<div className="flex-grow">
 							<Logo />
 						</div>
-						<nav className="hidden md:block min-w-[258px] mr-20">
+						<nav className="hidden md:block min-w-[258px] mr-[81px]">
 							<ul className="flex gap-5 justify-between">
 								{navItems.map(({ href, title }, i) => (
 									<NavigationItem
@@ -82,7 +82,7 @@ const Header = () => {
 						>
 							<BurgerIcon isOpen={isOpen} />
 						</button>
-						<div className="flex justify-between min-w-[230px] mr-44 hidden md:flex">
+						<div className="flex justify-between w-[229px] mr-[141px] hidden md:flex">
 							<div>
 								<LanguageToggle/>
 							</div>

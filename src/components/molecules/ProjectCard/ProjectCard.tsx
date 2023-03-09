@@ -1,7 +1,7 @@
 import Hr from "../../atoms/Hr/Hr";
 import { Link } from "react-router-dom";
-import ArrowIconDark from "../../../assets/icons/ArrowIconDark.png";
-import ArrowIconWhite from "../../../assets/icons/ArrowIconWhite.png";
+import ArrowIconDark from "../../../assets/icons/ArrowIconDark.svg";
+import ArrowIconWhite from "../../../assets/icons/ArrowIconWhite.svg";
 import { useTheme } from "../../../context/ThemeProvider";
 
 const ProjectCard = ({image, icon, name, desc, link}:{image:string, icon:{exist: boolean, iconDark:string, iconWhite: string}, name:string, desc:string, link:string,

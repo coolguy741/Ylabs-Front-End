@@ -34,7 +34,7 @@ const NavigationItem = ({
 					className={classNames(
 						isActive
 							? 'border-solid border-b-2 border-black dark:border-white'
-							: '',
+							: 'border-solid border-b-2 border-white dark:border-black',
 						'uppercase md:underlined transition'
 					)}
 				>
