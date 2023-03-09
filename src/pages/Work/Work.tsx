@@ -22,7 +22,7 @@ const projectsData = [
             iconWhite: "",
         },
         link: "/planify",
-        name: "planify:",
+        name: "Planifai:",
         desc: "An AI-powered platform that creates comprehensive business plans in a matter of minutes." ,
     },
     {
