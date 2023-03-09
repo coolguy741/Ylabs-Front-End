@@ -82,17 +82,17 @@ const Arufo = () => {
                 <h3 className="mt-20 md:mt-64">Brand pillars:</h3>
                 <Hr className="mt-[11px]" />
                 <div className="flex">
-                    <div className="mt-12 md:mt-24 w-1/2 pr-8">
+                    <div className="pt-12 md:pt-[119px] w-1/2 pr-8">
                         <img className="transform" src={ArufoData.brand.image} alt={`${ArufoData.projectName} brand`}/>
                     </div>
-                    <div className="w-1/2">
+                    <div className="w-1/2 pt-[28px]">
                         {
                             ArufoData.brand.content.map((pillar) => {
                                 return <>
-                                    <h2 className="py-4 md:py-8">{pillar.title}</h2>
-                                    <Hr className=""/>
-                                    <p className="font-s2 py-4 md:my-8">{pillar.desc}</p>
-                                </>
+                                        <h2 className="py-4 md:py-[33px]">{pillar.title}</h2>
+                                        <Hr className=""/>
+                                        <p className="font-s2 py-4 md:my-8">{pillar.desc}</p>
+                                    </>
                             })
                         }
                     </div>
