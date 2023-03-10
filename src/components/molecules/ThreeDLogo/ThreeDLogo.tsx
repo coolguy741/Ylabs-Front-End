@@ -60,20 +60,10 @@ const ThreeDLogo = ({bgColor}:ThreeDLogoProps) => {
 
     container.appendChild(renderer.domElement);
 
-    const light1 = new THREE.DirectionalLight(0xffffff, 1);
-    light1.position.set(0, 0, 0.4);
-    light1.target.position.set(0, 0, 0);
-    scene.add(light1);
-
-    const light2 = new THREE.DirectionalLight(0xffffff, 1);
-    light2.position.set(0.2, 0, -0.4);
-    light2.target.position.set(0, 0, 0);
-    scene.add(light2);
-
-    const light3 = new THREE.DirectionalLight(0xffffff, 1);
-    light3.position.set(-1, 0, 0);
-    light3.target.position.set(-0.2, 0, -0.4);
-    scene.add(light3);
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5)
+    const pointLight = new THREE.PointLight(0xffffff, 0.5)
+    pointLight.position.set(2, 3, 4)
+    scene.add(ambientLight, pointLight)
 
     return () => {
       container.removeChild(renderer.domElement);
