@@ -37,12 +37,10 @@ const ApproachSection = () => {
             console.log("\n screen Size", screenSize);
         });
          setActiveCircle(closestCircleIndex);
-         return ;
     };
 
     const handleResize = () => {
         setScreenSize({width: window.innerWidth, height: window.innerHeight});
-        return ;
     }
 
     useEffect(() => {
@@ -53,7 +51,7 @@ const ApproachSection = () => {
             window.removeEventListener("scroll", handleScroll);
             window.removeEventListener("resize", handleResize);
         }
-    }, []);
+    }, [handleScroll, handleResize]);
 
     const handleCircleClick = (circleIndex: number) => {
         setActiveCircle(circleIndex);
