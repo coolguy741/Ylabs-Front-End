@@ -1,7 +1,6 @@
 import Hr from '../../components/atoms/Hr/Hr';
 import Layout1 from '../../components/organisms/Layout1/Layout1';
 import SwissFlag from '../../assets/icons/Swiss_Flag.svg';
-import { Link } from 'react-router-dom';
 
 const Contact = () => {
     return (
@@ -35,9 +34,9 @@ const Contact = () => {
                     </div>
                     <Hr className='mt-9 mb-8'/>
                     <div className='flex'>
-                        <a href="https://www.linkedin.com/company/ylabs-gmbh/" className='w-1/3' target="_blank">LinkedIn</a>
-                        <a href="" className='w-1/3' target="_blank">Instagram</a>
-                        <a href="" className='w-1/3' target="_blank">Facebook</a>
+                        <a href="https://www.linkedin.com/company/ylabs-gmbh/" className='w-1/3' target="_blank" rel="noreferrer">LinkedIn</a>
+                        <a href="#top" className='w-1/3' target="_blank" rel="noreferrer">Instagram</a>
+                        <a href="#top" className='w-1/3' target="_blank" rel="noreferrer">Facebook</a>
                     </div>
                     <Hr className='mt-9 mb-[23px]'/>
                     <div className='flex justify-between'>
