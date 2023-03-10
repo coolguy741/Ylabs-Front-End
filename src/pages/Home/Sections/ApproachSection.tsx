@@ -19,31 +19,31 @@ const ApproachSection = () => {
     const [activeCircle, setActiveCircle] = useState<number>(0);
     const circleRefs = [useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null)];
 
-    
-    const handleScroll = () => {
-        let closestCircleIndex = 0;
-        let closestCircleDistance = Infinity;
-        circleRefs.forEach((circleRef, index) => {
-            const circleTop = circleRef.current?.getBoundingClientRect().top ?? 0;
-            const circleHeight = circleRef.current?.clientHeight ?? 0;
-            const distance = Math.abs(circleTop + circleHeight/2 - screenSize.height/2);
-            if (distance < closestCircleDistance) {
-                closestCircleIndex = index;
-                closestCircleDistance = distance;
-            }
-            console.log("index: ", index);
-            console.log("\n circle Top",distance );
-            console.log("\n innerWidth", window.innerWidth);
-            console.log("\n screen Size", screenSize);
-        });
-         setActiveCircle(closestCircleIndex);
-    };
-
-    const handleResize = () => {
-        setScreenSize({width: window.innerWidth, height: window.innerHeight});
-    }
-
     useEffect(() => {
+
+        const handleScroll = () => {
+            let closestCircleIndex = 0;
+            let closestCircleDistance = Infinity;
+            circleRefs.forEach((circleRef, index) => {
+                const circleTop = circleRef.current?.getBoundingClientRect().top ?? 0;
+                const circleHeight = circleRef.current?.clientHeight ?? 0;
+                const distance = Math.abs(circleTop + circleHeight/2 - screenSize.height/2);
+                if (distance < closestCircleDistance) {
+                    closestCircleIndex = index;
+                    closestCircleDistance = distance;
+                }
+                console.log("index: ", index);
+                console.log("\n circle Top",distance );
+                console.log("\n innerWidth", window.innerWidth);
+                console.log("\n screen Size", screenSize);
+            });
+             setActiveCircle(closestCircleIndex);
+        };
+    
+        const handleResize = () => {
+            setScreenSize({width: window.innerWidth, height: window.innerHeight});
+        }
+
         window.addEventListener("scroll", handleScroll);
         window.addEventListener("resize", handleResize);
 
@@ -51,7 +51,7 @@ const ApproachSection = () => {
             window.removeEventListener("scroll", handleScroll);
             window.removeEventListener("resize", handleResize);
         }
-    }, [handleScroll, handleResize]);
+    }, []);
 
     const handleCircleClick = (circleIndex: number) => {
         setActiveCircle(circleIndex);
