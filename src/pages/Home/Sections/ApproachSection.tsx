@@ -14,7 +14,7 @@ const Circle = forwardRef<HTMLDivElement, CircleProps>((props, ref: ForwardedRef
             </div>;
 });
 
-const ApproachSection = ({}) => {
+const ApproachSection = () => {
     const [screenSize, setScreenSize] = useState({width: window.innerWidth, height: window.innerHeight});
     const [activeCircle, setActiveCircle] = useState<number>(0);
     const circleRefs = [useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null)];
@@ -37,10 +37,12 @@ const ApproachSection = ({}) => {
             console.log("\n screen Size", screenSize);
         });
          setActiveCircle(closestCircleIndex);
+         return ;
     };
 
     const handleResize = () => {
         setScreenSize({width: window.innerWidth, height: window.innerHeight});
+        return ;
     }
 
     useEffect(() => {
