@@ -51,7 +51,7 @@ const ApproachSection = () => {
             window.removeEventListener("scroll", handleScroll);
             window.removeEventListener("resize", handleResize);
         }
-    }, []);
+    });
 
     const handleCircleClick = (circleIndex: number) => {
         setActiveCircle(circleIndex);
