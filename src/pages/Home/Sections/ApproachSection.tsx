@@ -70,7 +70,7 @@ const ApproachSection = () => {
                     <Circle className='-mt-[9vw]' ref={circleRefs[1]} title="Conceptualization" selected={1 === activeCircle} onClick={() => handleCircleClick(1)}/>
                     <Circle className='-mt-[9vw]' ref={circleRefs[2]} title="Building" selected={2 === activeCircle} onClick={() => handleCircleClick(2)}/>
                 </div>
-                <div className='sticky self-start top-0 font-h3 w-[90%] max-w-[620px] xsm:w-[50%] pt-[29px] text-1xl md:text-3xl'>
+                <div className='sticky self-start top-20 font-h3 w-[90%] max-w-[620px] xsm:w-[50%] pt-[29px] text-1xl md:text-3xl'>
                     { activeCircle === 0 && (
                         <>
                             <p>Stage details here over the years, to explain this point and make sure our clients understand the benefits of our unique framework.  This is just placeholder text, though.</p>
