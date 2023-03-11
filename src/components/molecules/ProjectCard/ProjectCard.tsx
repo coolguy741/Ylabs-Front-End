@@ -1,10 +1,11 @@
 import Hr from "../../atoms/Hr/Hr";
+import { ComingSoonSvg } from "../ComingSoonSvg";
 import { Link } from "react-router-dom";
 import ArrowIconDark from "../../../assets/icons/ArrowIconDark.svg";
 import ArrowIconWhite from "../../../assets/icons/ArrowIconWhite.svg";
 import { useTheme } from "../../../context/ThemeProvider";
 
-const ProjectCard = ({image, icon, name, desc, link}:{image:string, icon:{exist: boolean, iconDark:string, iconWhite: string}, name:string, desc:string, link:string,
+const ProjectCard = ({image, comingSoon, name, desc, link}:{image:string, comingSoon:boolean, name:string, desc:string, link:string,
 }) => {
 	const {theme} = useTheme();
 
@@ -16,7 +17,13 @@ const ProjectCard = ({image, icon, name, desc, link}:{image:string, icon:{exist:
 					<Link to = {link}>
 						<img src={image} alt={name}/>
 					</Link>
-					{ icon.exist === false ? <></> :<img className="absolute -top-[60px] -right-[60px] w-[120px] y-[120px]" src={theme === "dark" ? icon.iconWhite : icon.iconDark} alt="coming soom icon"/> }
+					{ comingSoon === true ? 
+						<div className="absolute w-[143px] h-[143px] -top-[71px] -right-[71px]">
+							<ComingSoonSvg/>
+						</div> 
+						:
+						<></>
+					}
 				</div>
 				<div className="w-1/2 flex-col relative ml-16">
 					<div className="absolute bottom-0 w-full">
