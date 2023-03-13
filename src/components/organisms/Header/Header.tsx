@@ -57,7 +57,7 @@ const Header = () => {
 	return (
 		<div className={`absolute top-0 w-full ${location.pathname === '/arufo' ? "dark" : ""}`}>
 			<Headroom>
-				<header className="dark:hover:bg-lightBlack relative z-50 px-7 lg:px-14 py-8">
+				<header className="relative z-50 px-7 lg:px-14 py-8">
 					<div className="flex items-center text-3xl md:text-xl leading-5 text-black dark:text-white">
 						<div className="flex-grow">
 							<Logo />
