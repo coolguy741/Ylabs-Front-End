@@ -140,6 +140,7 @@ module.exports = {
         montrealBook: ["PP Neue Montreal Book"],
         montrealMedium: ["PP Neue Montreal Medium"],
       },
+
       animation: {
         "spin-slow": "spin 10s linear infinite",
       },

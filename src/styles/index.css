@@ -44,3 +44,23 @@
   font-family: "PP Neue Montreal Medium";
   src: url("/public/font/PPNeueMontreal-Medium.otf");
 }
+
+@keyframes rotate-clockwise {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-counterclockwise {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.rotate-clockwise {
+  animation: rotate-clockwise 10s linear infinite;
+}
+
+.rotate-counterclockwise {
+  animation: rotate-counterclockwise 10s linear infinite;
+}

@@ -19,7 +19,7 @@ const ProjectCard = ({image, comingSoon, name, desc, link}:{image:string, coming
 					</Link>
 					{ comingSoon === true ? 
 						<div className="absolute w-[143px] h-[143px] -top-[71px] -right-[71px]">
-							<ComingSoonSvg/>
+							<ComingSoonSvg />
 						</div> 
 						:
 						<></>
