@@ -9,7 +9,7 @@ interface CircleProps {
 }
 
 const Circle = forwardRef<HTMLDivElement, CircleProps>((props, ref: ForwardedRef<HTMLDivElement>) => {
-    return  <div ref={ref} onClick={props.onClick} className={`${props.className} font-h3 flex w-[26vw] xsm:h-[26vw] max-w-[500px] max-h-[500px] rounded-full items-center justify-center border-[3px] ${props.selected ? "text-black dark:text-white bg-white dark:bg-black border-black dark:border-white z-20": "text-white dark:text-black bg-black dark:bg-white z-0"}`}>
+    return  <div ref={ref} onClick={props.onClick} className={`${props.className} font-h3 flex w-[26vw] xsm:h-[26vw] max-w-[500px] max-h-[500px] rounded-full items-center justify-center border-[3px] ${props.selected ? "text-white dark:text-black bg-black dark:bg-white z-20": "     text-black dark:text-white bg-white dark:bg-black border-black dark:border-white z-0"}`}>
                 <span>{props.title}</span>
             </div>;
 });
@@ -70,7 +70,7 @@ const ApproachSection = () => {
                     <Circle className='-mt-[9vw]' ref={circleRefs[1]} title="Conceptualization" selected={1 === activeCircle} onClick={() => handleCircleClick(1)}/>
                     <Circle className='-mt-[9vw]' ref={circleRefs[2]} title="Building" selected={2 === activeCircle} onClick={() => handleCircleClick(2)}/>
                 </div>
-                <div className='sticky self-start top-20 font-h3 w-[90%] max-w-[620px] xsm:w-[50%] pt-[29px] text-1xl md:text-3xl'>
+                <div className='sticky self-start top-[200px] font-h3 w-[90%] max-w-[620px] xsm:w-[50%] pt-[29px] text-1xl md:text-3xl'>
                     { activeCircle === 0 && (
                         <>
                             <p>Stage details here over the years, to explain this point and make sure our clients understand the benefits of our unique framework.  This is just placeholder text, though.</p>
