@@ -20,17 +20,15 @@ const ImageSlider = ({images}:{images:image[]}) => {
 	return (
 		<>
 			 <Swiper
-			 slidesPerView={"auto"}
+			 	slidesPerView={"auto"}
         spaceBetween={20}
+				loop={true}
 				centeredSlides={true}
 				autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Autoplay, Pagination]}
+        modules={[Autoplay]}
         className="mySwiper"
       >
 				{
