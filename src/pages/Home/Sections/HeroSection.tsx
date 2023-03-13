@@ -13,7 +13,7 @@ const HeroSection = () => {
                 <div className='max-w-[600px]  md:max-w-[920px] mt-[140px]'>
                     <div className='min-h-0 lg:min-h-[256px]'>
                         <h1>
-                            Transforming startup ideas into market-ready entities
+                            Transforming startup ideas into market-ready entities.
                         </h1>
                     </div>
                 </div>
@@ -29,7 +29,7 @@ const HeroSection = () => {
                         organizations of the future.
                     </p>
                     <p className='bottom-[7vw] absolute'>
-                        Today
+                        Today.
                     </p>
                 </div>
             </div>
