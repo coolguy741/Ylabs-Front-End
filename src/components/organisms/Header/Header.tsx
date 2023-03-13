@@ -8,6 +8,7 @@ import { NavigationItem } from '../../atoms/NavigationItem';
 import { ThemeToggle } from '../../atoms/ThemeToggle';
 import { useLocation } from 'react-router-dom';
 import LanguageToggle from '../../atoms/LanguageToggle/LanguageToggle';
+import Headroom from 'react-headroom';
 
 export const navItems = [
 	{
@@ -55,48 +56,50 @@ const Header = () => {
 
 	return (
 		<div className={`absolute top-0 w-full ${location.pathname === '/arufo' ? "dark" : ""}`}>
-				<header className="hover:bg-lightGray dark:hover:bg-lightBlack relative z-50 px-7 lg:px-14 py-8">
-					<div className="flex items-center text-3xl md:text-xl leading-5 text-black dark:text-white">
-						<div className="flex-grow">
-							<Logo />
-						</div>
-						<nav className="hidden md:block min-w-[258px] mr-[81px]">
-							<ul className="flex gap-5 justify-between">
-								{navItems.map(({ href, title }, i) => (
-									<NavigationItem
-										href={href}
-										title={title}
-										key={href}
-										variants={navigationVariants}
-										initial="hidden"
-										animate="visible"
-										customDelay={(i + 1) * 0.1}
-									/>
-								))}
-							</ul>
-						</nav>
-						<button
-							className="absolute z-50 top-8 right-4 md:hidden"
-							onClick={() => setIsOpen((prev) => !prev)}
-							aria-label="Menu"
-						>
-							<BurgerIcon isOpen={isOpen} />
-						</button>
-						<div className="flex justify-between w-[229px] mr-[141px] hidden md:flex">
-							<div>
-								<LanguageToggle/>
+				<Headroom>
+					<header className="dark:hover:bg-lightBlack relative z-50 px-7 lg:px-14 py-8">
+						<div className="flex items-center text-3xl md:text-xl leading-5 text-black dark:text-white">
+							<div className="flex-grow">
+								<Logo />
 							</div>
-							<div>
-								<ThemeToggle />
+							<nav className="hidden md:block min-w-[258px] mr-[81px]">
+								<ul className="flex gap-5 justify-between">
+									{navItems.map(({ href, title }, i) => (
+										<NavigationItem
+											href={href}
+											title={title}
+											key={href}
+											variants={navigationVariants}
+											initial="hidden"
+											animate="visible"
+											customDelay={(i + 1) * 0.1}
+										/>
+									))}
+								</ul>
+							</nav>
+							<button
+								className="absolute z-50 top-8 right-4 md:hidden"
+								onClick={() => setIsOpen((prev) => !prev)}
+								aria-label="Menu"
+							>
+								<BurgerIcon isOpen={isOpen} />
+							</button>
+							<div className="flex justify-between w-[229px] mr-[141px] hidden md:flex">
+								<div>
+									<LanguageToggle/>
+								</div>
+								<div>
+									<ThemeToggle />
+								</div>
 							</div>
-						</div>
-						<div className="flex hidden md:block">
-							Ylabs 	&copy;2023
-						</div>
-					</div>	
-				</header>
-				<MobileMenu isOpen={isOpen} />
-		</div>
+							<div className="flex hidden md:block">
+								Ylabs 	&copy;2023
+							</div>
+						</div>	
+					</header>
+					<MobileMenu isOpen={isOpen} />
+				</Headroom>
+			</div>
 	);
 };
 
