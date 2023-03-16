@@ -32,10 +32,6 @@ const ApproachSection = () => {
                     closestCircleIndex = index;
                     closestCircleDistance = distance;
                 }
-                console.log("index: ", index);
-                console.log("\n circle Top",distance );
-                console.log("\n innerWidth", window.innerWidth);
-                console.log("\n screen Size", screenSize);
             });
              setActiveCircle(closestCircleIndex);
         };
