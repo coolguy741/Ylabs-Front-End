@@ -9,7 +9,7 @@ interface CircleProps {
 }
 
 const Circle = forwardRef<HTMLDivElement, CircleProps>((props, ref: ForwardedRef<HTMLDivElement>) => {
-    return  <div ref={ref} onClick={props.onClick} className={`${props.className} font-h3 flex w-[26vw] xsm:h-[26vw] max-w-[500px] max-h-[500px] rounded-full items-center justify-center border-[3px] ${props.selected ? "text-white dark:text-black bg-black dark:bg-white z-20": "     text-black dark:text-white bg-white dark:bg-black border-black dark:border-white z-0"}`}>
+    return  <div ref={ref} onClick={props.onClick} className={`${props.className} font-h3 flex w-[26vw] xsm:h-[26vw] max-w-[500px] max-h-[500px] rounded-full items-center justify-center ${props.selected ? "text-white dark:text-black bg-black dark:bg-white z-20 border-none": "text-black dark:text-white bg-white dark:bg-black border-black dark:border-white z-0 border-[3px]"}`}>
                 <span>{props.title}</span>
             </div>;
 });

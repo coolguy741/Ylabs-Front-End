@@ -4,21 +4,21 @@ import Layout1 from "../../components/organisms/Layout1/Layout1";
 
 const projectsData = [
     {
-        image: "/images/work_Arufabudo.png",
+        image: "/images/work-Arufabudo.jpg",
         comingSoon: false,
         link: "/arufo",
         name: "Arufabudo:",
         desc: "Manufacturing and selling premium boxing gear for warriors who aim to stand out from the crowd." ,
     },
     {
-        image: "/images/work_Planifai.png",
+        image: "/images/work_Planifai.jpg",
         comingSoon: false,
         link: "/planify",
         name: "Planifai:",
         desc: "An AI-powered platform that creates comprehensive business plans in a matter of minutes." ,
     },
     {
-        image: "/images/work_Rapidcoder.png",
+        image: "/images/work_Rapidcoder.jpg",
         comingSoon: true,
         link: "/rapid",
         name: "Rapidcoder:",
