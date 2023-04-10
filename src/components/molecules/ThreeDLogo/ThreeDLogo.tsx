@@ -17,7 +17,7 @@ const ThreeDLogo = ({bgColor}:ThreeDLogoProps) => {
 
     container = mountRef.current!;
     camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.001, 10000);
-    camera.position.set(-0.08, 0.25, 0.95);
+    camera.position.set(-0.10, 0.25, 1.00);
 
     scene = new THREE.Scene();
 
@@ -59,6 +59,7 @@ const ThreeDLogo = ({bgColor}:ThreeDLogoProps) => {
         scene.add( mesh );
         mesh.rotation.y = -0;
         mesh.rotation.x = 0.1;
+        mesh.rotation.z = -0.05;
         const animate = () => {
           requestAnimationFrame( animate );
           renderer.render( scene, camera );
