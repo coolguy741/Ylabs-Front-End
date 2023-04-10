@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
-// import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 export interface ThreeDLogoProps {
@@ -18,7 +17,7 @@ const ThreeDLogo = ({bgColor}:ThreeDLogoProps) => {
 
     container = mountRef.current!;
     camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.001, 10000);
-    camera.position.set(-0.03, 0.27, 0.75);
+    camera.position.set(-0.08, 0.25, 0.95);
 
     scene = new THREE.Scene();
 
@@ -26,20 +25,50 @@ const ThreeDLogo = ({bgColor}:ThreeDLogoProps) => {
     loader.load(
       './object/Ylabs_3D_Object_Logo.glb',
       ( gltf ) => {
-        scene.add( gltf.scene );
-        gltf.scene.rotation.y = -0.5;
-        gltf.scene.rotation.x = 0.1;
+        const mesh = gltf.scene.children[1];
+        
+        mesh.traverse(function(child) {
+          if (child instanceof THREE.Mesh) {
+            const originalMaterial = child.material;
+            const newMaterial = originalMaterial.clone();
+            newMaterial.transparent = true;
+            newMaterial.opacity = 0.8;
+      
+            child.material = newMaterial;
+          }
+        });
+
+        mesh.traverse(function(child) {
+          if (child instanceof THREE.Mesh) {
+            const originalMaterial = child.material;
+            const newMaterial = new THREE.MeshPhysicalMaterial({
+              color: originalMaterial.color,
+              map: originalMaterial.map,
+              transparent: true,
+              opacity: 0.85,
+              roughness: 0.7,
+              metalness: 0,
+              envMap: originalMaterial.envMap, // preserve the environment map
+              side: originalMaterial.side // preserve the side of the material (front, back, or double-sided)
+            });
+      
+            child.material = newMaterial;
+          }
+        });
+
+        scene.add( mesh );
+        mesh.rotation.y = -0;
+        mesh.rotation.x = 0.1;
         const animate = () => {
           requestAnimationFrame( animate );
-          // gltf.scene.rotation.y -= 0.01;
           renderer.render( scene, camera );
         };
 
         const handleMouseMove = (event:MouseEvent) => {
           const x = (event.clientX / window.innerWidth) * 2 - 1;
           const y = - (event.clientY / window.innerHeight) * 2 + 1;
-          gltf.scene.rotation.y = -0.5 + x * 0.1;
-          gltf.scene.rotation.x = y * 0.1;
+          mesh.rotation.y = x * 0.1;
+          mesh.rotation.x = 0.1 + y * 0.1;
         }
 
         document.addEventListener('mousemove', handleMouseMove);
@@ -60,9 +89,9 @@ const ThreeDLogo = ({bgColor}:ThreeDLogoProps) => {
 
     container.appendChild(renderer.domElement);
 
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5)
-    const pointLight = new THREE.PointLight(0xffffff, 0.5)
-    pointLight.position.set(2, 3, 4)
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.75)
+    const pointLight = new THREE.PointLight(0xffffff, 0.9)
+    pointLight.position.set(3.5, 3, 4)
     scene.add(ambientLight, pointLight)
 
     return () => {
