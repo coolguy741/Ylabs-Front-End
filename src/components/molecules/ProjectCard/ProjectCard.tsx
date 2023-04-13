@@ -18,7 +18,7 @@ const ProjectCard = ({image, comingSoon, name, desc, link}:{image:string, coming
 						<img src={image} alt={name}/>
 					</Link>
 					{ comingSoon === true ? 
-						<div className="absolute w-[143px] h-[143px] -top-[71px] -right-[71px]">
+						<div className="absolute w-[121px] h-[121px] -top-[61px] -right-[61px]">
 							<ComingSoonSvg />
 						</div> 
 						:
